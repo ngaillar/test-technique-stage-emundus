@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__finder_terms">
+   <field Field="term_id" Type="int unsigned" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="term" Type="varchar(75)" Null="NO" Key="MUL" Extra="" />
+   <field Field="stem" Type="varchar(75)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="common" Type="tinyint unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="phrase" Type="tinyint unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="weight" Type="float unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="soundex" Type="varchar(75)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="links" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="language" Type="char(7)" Null="NO" Key="MUL" Default="" Extra="" />
+   <key Table="#__finder_terms" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="term_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="0" Key_name="idx_term_language" Seq_in_index="1" Column_name="term" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="0" Key_name="idx_term_language" Seq_in_index="2" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_stem" Seq_in_index="1" Column_name="stem" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_term_phrase" Seq_in_index="1" Column_name="term" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_term_phrase" Seq_in_index="2" Column_name="phrase" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_stem_phrase" Seq_in_index="1" Column_name="stem" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_stem_phrase" Seq_in_index="2" Column_name="phrase" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_soundex_phrase" Seq_in_index="1" Column_name="soundex" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_soundex_phrase" Seq_in_index="2" Column_name="phrase" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_terms" Non_unique="1" Key_name="idx_language" Seq_in_index="1" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+ </database>
+</mysqldump>

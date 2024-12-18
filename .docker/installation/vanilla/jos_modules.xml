@@ -1,0 +1,922 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__modules">
+   <field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="asset_id" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="title" Type="varchar(100)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="note" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="content" Type="text" Null="YES" Key="" Extra="" />
+   <field Field="ordering" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="position" Type="varchar(50)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="checked_out" Type="int unsigned" Null="YES" Key="" Extra="" />
+   <field Field="checked_out_time" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_up" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_down" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="published" Type="tinyint" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="module" Type="varchar(50)" Null="YES" Key="MUL" Extra="" />
+   <field Field="access" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="showtitle" Type="tinyint unsigned" Null="NO" Key="" Default="1" Extra="" />
+   <field Field="params" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="client_id" Type="tinyint" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="language" Type="char(7)" Null="NO" Key="MUL" Extra="" />
+   <key Table="#__modules" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__modules" Non_unique="1" Key_name="published" Seq_in_index="1" Column_name="published" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__modules" Non_unique="1" Key_name="published" Seq_in_index="2" Column_name="access" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__modules" Non_unique="1" Key_name="newsfeeds" Seq_in_index="1" Column_name="module" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__modules" Non_unique="1" Key_name="newsfeeds" Seq_in_index="2" Column_name="published" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__modules" Non_unique="1" Key_name="idx_language" Seq_in_index="1" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__modules">
+   <row>
+    <field name="id">1</field>
+    <field name="asset_id">39</field>
+    <field name="title">Main Menu</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">sidebar-right</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up">2023-12-01 13:54:37</field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_menu</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;menutype&quot;:&quot;mainmenu&quot;,&quot;startLevel&quot;:&quot;0&quot;,&quot;endLevel&quot;:&quot;0&quot;,&quot;showAllChildren&quot;:&quot;1&quot;,&quot;tag_id&quot;:&quot;&quot;,&quot;class_sfx&quot;:&quot;&quot;,&quot;window_open&quot;:&quot;&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;1&quot;,&quot;cache_time&quot;:&quot;900&quot;,&quot;cachemode&quot;:&quot;itemid&quot;}</field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">2</field>
+    <field name="asset_id">40</field>
+    <field name="title">Login</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">login</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_login</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">3</field>
+    <field name="asset_id">41</field>
+    <field name="title">Popular Articles</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">6</field>
+    <field name="position">cpanel</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_popular</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;count&quot;:&quot;5&quot;,&quot;catid&quot;:&quot;&quot;,&quot;user_id&quot;:&quot;0&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;, &quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">4</field>
+    <field name="asset_id">42</field>
+    <field name="title">Recently Added Articles</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">4</field>
+    <field name="position">cpanel</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_latest</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;count&quot;:&quot;5&quot;,&quot;ordering&quot;:&quot;c_dsc&quot;,&quot;catid&quot;:&quot;&quot;,&quot;user_id&quot;:&quot;0&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;, &quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">8</field>
+    <field name="asset_id">43</field>
+    <field name="title">Toolbar</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">toolbar</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_toolbar</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">9</field>
+    <field name="asset_id">44</field>
+    <field name="title">Notifications</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">3</field>
+    <field name="position">icon</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_quickicon</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;context&quot;:&quot;update_quickicon&quot;,&quot;header_icon&quot;:&quot;icon-sync&quot;,&quot;show_jupdate&quot;:&quot;1&quot;,&quot;show_eupdate&quot;:&quot;1&quot;,&quot;show_oupdate&quot;:&quot;1&quot;,&quot;show_privacy&quot;:&quot;1&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;style&quot;:&quot;0&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">10</field>
+    <field name="asset_id">45</field>
+    <field name="title">Logged-in Users</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">2</field>
+    <field name="position">cpanel</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_logged</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;count&quot;:&quot;5&quot;,&quot;name&quot;:&quot;1&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;, &quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">12</field>
+    <field name="asset_id">46</field>
+    <field name="title">Admin Menu</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">menu</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_menu</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;layout&quot;:&quot;&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;shownew&quot;:&quot;1&quot;,&quot;showhelp&quot;:&quot;1&quot;,&quot;cache&quot;:&quot;0&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">15</field>
+    <field name="asset_id">49</field>
+    <field name="title">Title</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">title</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_title</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">16</field>
+    <field name="asset_id">50</field>
+    <field name="title">Login Form</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">7</field>
+    <field name="position">sidebar-right</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_login</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;greeting&quot;:&quot;1&quot;,&quot;name&quot;:&quot;0&quot;}</field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">17</field>
+    <field name="asset_id">51</field>
+    <field name="title">Breadcrumbs</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">breadcrumbs</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_breadcrumbs</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;showHome&quot;:&quot;1&quot;,&quot;homeText&quot;:&quot;&quot;,&quot;showComponent&quot;:&quot;1&quot;,&quot;separator&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;,&quot;cache_time&quot;:&quot;0&quot;,&quot;cachemode&quot;:&quot;itemid&quot;}</field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">79</field>
+    <field name="asset_id">52</field>
+    <field name="title">Multilanguage status</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">2</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_multilangstatus</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">86</field>
+    <field name="asset_id">53</field>
+    <field name="title">Joomla Version</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_version</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">87</field>
+    <field name="asset_id">55</field>
+    <field name="title">Sample Data</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_sampledata</field>
+    <field name="access">6</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">88</field>
+    <field name="asset_id">67</field>
+    <field name="title">Latest Actions</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">3</field>
+    <field name="position">cpanel</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_latestactions</field>
+    <field name="access">6</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">89</field>
+    <field name="asset_id">68</field>
+    <field name="title">Privacy Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">5</field>
+    <field name="position">cpanel</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_privacy_dashboard</field>
+    <field name="access">6</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">90</field>
+    <field name="asset_id">89</field>
+    <field name="title">Login Support</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">sidebar</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_loginsupport</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;forum_url&quot;:&quot;https://forum.joomla.org/&quot;,&quot;documentation_url&quot;:&quot;https://docs.joomla.org/&quot;,&quot;news_url&quot;:&quot;https://www.joomla.org/announcements.html&quot;,&quot;automatic_title&quot;:1,&quot;prepare_content&quot;:1,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;0&quot;,&quot;header_tag&quot;:&quot;h3&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;0&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">91</field>
+    <field name="asset_id">72</field>
+    <field name="title">System Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-system</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_submenu</field>
+    <field name="access">1</field>
+    <field name="showtitle">0</field>
+    <field name="params">{&quot;menutype&quot;:&quot;*&quot;,&quot;preset&quot;:&quot;system&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;System-none&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">92</field>
+    <field name="asset_id">73</field>
+    <field name="title">Content Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-content</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_submenu</field>
+    <field name="access">1</field>
+    <field name="showtitle">0</field>
+    <field name="params">{&quot;menutype&quot;:&quot;*&quot;,&quot;preset&quot;:&quot;content&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;System-none&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">93</field>
+    <field name="asset_id">74</field>
+    <field name="title">Menus Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-menus</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_submenu</field>
+    <field name="access">1</field>
+    <field name="showtitle">0</field>
+    <field name="params">{&quot;menutype&quot;:&quot;*&quot;,&quot;preset&quot;:&quot;menus&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;System-none&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">94</field>
+    <field name="asset_id">75</field>
+    <field name="title">Components Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-components</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_submenu</field>
+    <field name="access">1</field>
+    <field name="showtitle">0</field>
+    <field name="params">{&quot;menutype&quot;:&quot;*&quot;,&quot;preset&quot;:&quot;components&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;System-none&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">95</field>
+    <field name="asset_id">76</field>
+    <field name="title">Users Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-users</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_submenu</field>
+    <field name="access">1</field>
+    <field name="showtitle">0</field>
+    <field name="params">{&quot;menutype&quot;:&quot;*&quot;,&quot;preset&quot;:&quot;users&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;System-none&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">96</field>
+    <field name="asset_id">86</field>
+    <field name="title">Popular Articles</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">3</field>
+    <field name="position">cpanel-content</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_popular</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;count&quot;:&quot;5&quot;,&quot;catid&quot;:&quot;&quot;,&quot;user_id&quot;:&quot;0&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;, &quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">97</field>
+    <field name="asset_id">87</field>
+    <field name="title">Recently Added Articles</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">4</field>
+    <field name="position">cpanel-content</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_latest</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;count&quot;:&quot;5&quot;,&quot;ordering&quot;:&quot;c_dsc&quot;,&quot;catid&quot;:&quot;&quot;,&quot;user_id&quot;:&quot;0&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;, &quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">98</field>
+    <field name="asset_id">88</field>
+    <field name="title">Logged-in Users</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">2</field>
+    <field name="position">cpanel-users</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_logged</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;count&quot;:&quot;5&quot;,&quot;name&quot;:&quot;1&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:&quot;0&quot;, &quot;bootstrap_size&quot;: &quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">99</field>
+    <field name="asset_id">77</field>
+    <field name="title">Frontend Link</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">5</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_frontend</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">100</field>
+    <field name="asset_id">78</field>
+    <field name="title">Messages</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">4</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_messages</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">101</field>
+    <field name="asset_id">79</field>
+    <field name="title">Post Install Messages</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">3</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_post_installation_messages</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">102</field>
+    <field name="asset_id">80</field>
+    <field name="title">User Status</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">6</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_user</field>
+    <field name="access">3</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">103</field>
+    <field name="asset_id">70</field>
+    <field name="title">Site</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">icon</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_quickicon</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;context&quot;:&quot;site_quickicon&quot;,&quot;header_icon&quot;:&quot;icon-desktop&quot;,&quot;show_users&quot;:&quot;1&quot;,&quot;show_articles&quot;:&quot;1&quot;,&quot;show_categories&quot;:&quot;1&quot;,&quot;show_media&quot;:&quot;1&quot;,&quot;show_menuItems&quot;:&quot;1&quot;,&quot;show_modules&quot;:&quot;1&quot;,&quot;show_plugins&quot;:&quot;1&quot;,&quot;show_templates&quot;:&quot;1&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;style&quot;:&quot;0&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">104</field>
+    <field name="asset_id">71</field>
+    <field name="title">System</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">2</field>
+    <field name="position">icon</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_quickicon</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;context&quot;:&quot;system_quickicon&quot;,&quot;header_icon&quot;:&quot;icon-wrench&quot;,&quot;show_global&quot;:&quot;1&quot;,&quot;show_checkin&quot;:&quot;1&quot;,&quot;show_cache&quot;:&quot;1&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;style&quot;:&quot;0&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">105</field>
+    <field name="asset_id">82</field>
+    <field name="title">3rd Party</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">4</field>
+    <field name="position">icon</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_quickicon</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;context&quot;:&quot;mod_quickicon&quot;,&quot;header_icon&quot;:&quot;icon-boxes&quot;,&quot;load_plugins&quot;:&quot;1&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;style&quot;:&quot;0&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">106</field>
+    <field name="asset_id">83</field>
+    <field name="title">Help Dashboard</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-help</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_submenu</field>
+    <field name="access">1</field>
+    <field name="showtitle">0</field>
+    <field name="params">{&quot;menutype&quot;:&quot;*&quot;,&quot;preset&quot;:&quot;help&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;style&quot;:&quot;System-none&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">107</field>
+    <field name="asset_id">84</field>
+    <field name="title">Privacy Requests</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-privacy</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_privacy_dashboard</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;cachemode&quot;:&quot;static&quot;,&quot;style&quot;:&quot;0&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">108</field>
+    <field name="asset_id">85</field>
+    <field name="title">Privacy Status</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">cpanel-privacy</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_privacy_status</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;cachemode&quot;:&quot;static&quot;,&quot;style&quot;:&quot;0&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;12&quot;,&quot;header_tag&quot;:&quot;h2&quot;,&quot;header_class&quot;:&quot;&quot;}</field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">109</field>
+    <field name="asset_id">96</field>
+    <field name="title">Guided Tours</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position">status</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_guidedtours</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">110</field>
+    <field name="asset_id">100</field>
+    <field name="title">Fabrik List Module</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">1</field>
+    <field name="position"></field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_fabrik_list</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">111</field>
+    <field name="asset_id">101</field>
+    <field name="title">Fabrik Form Module</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">2</field>
+    <field name="position"></field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_fabrik_form</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">112</field>
+    <field name="asset_id">102</field>
+    <field name="title">Fabrik Form Module</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">3</field>
+    <field name="position"></field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_fabrik_form</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">113</field>
+    <field name="asset_id">103</field>
+    <field name="title">Fabrik List Module</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">4</field>
+    <field name="position"></field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_fabrik_list</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">114</field>
+    <field name="asset_id">104</field>
+    <field name="title">Fabrik Quick Icon</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">5</field>
+    <field name="position"></field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_fabrik_quickicon</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">115</field>
+    <field name="asset_id">105</field>
+    <field name="title">Fabrik Visualization</field>
+    <field name="note"></field>
+    <field name="content"></field>
+    <field name="ordering">6</field>
+    <field name="position"></field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">0</field>
+    <field name="module">mod_fabrik_visualization</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params"></field>
+    <field name="client_id">1</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">116</field>
+    <field name="asset_id">107</field>
+    <field name="title">Instructions</field>
+    <field name="note"></field>
+    <field name="content">&lt;ol&gt;
+&lt;li&gt;Intégrer un sélecteur de couleur dans le champ Couleur du formulaire. Aidez-vous des documentations fournies afin de modifier le plugin &lt;code&gt;emundus_colorpicker&lt;/code&gt; situé dans &lt;code&gt;plugins/fabrik_elements/emundus_colorpicker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ajouter un ou plusieurs paramètres pour permettre de proposer des couleurs parmi une palette pre-configuré. Cela pourrait suivre le modèle suivant : &lt;br&gt;&lt;img src=&quot;images/Capture%20decran%202023-12-01%20a%2015.02.55.png&quot; width=&quot;154&quot; height=&quot;59&quot; loading=&quot;lazy&quot;&gt;&lt;/li&gt;
+&lt;li&gt;Rendez ce champ obligatoire en utilisation un plugin de validation. Vous pouvez prendre le champ Nom comme modèle&lt;/li&gt;
+&lt;li&gt;Accédez ensuite au menu Mes données et modifier le fichier &lt;code&gt;plugins/fabrik_element/emundus_colorpicker/layouts/fabrik-element-emundus_colorpicker-list.php&lt;/code&gt; afin d'afficher la donnée sous forme de pastille avec la couleur enregistré en base&lt;/li&gt;
+&lt;/ol&gt;</field>
+    <field name="ordering">1</field>
+    <field name="position">sidebar-right</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_custom</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;prepare_content&quot;:0,&quot;backgroundimage&quot;:&quot;&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;cachemode&quot;:&quot;static&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;0&quot;,&quot;header_tag&quot;:&quot;h3&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;0&quot;}</field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+   <row>
+    <field name="id">117</field>
+    <field name="asset_id">108</field>
+    <field name="title">Documentation</field>
+    <field name="note"></field>
+    <field name="content">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.joomla.org/Standard_form_field_types&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ajouter un paramètre dans un plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://emundus.atlassian.net/wiki/external/MjljMjU2MjM5MTBmNGU4YTg3ZGY4NzA1MTM2Y2RlZjY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Créer/modifier un élément de formulaire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fabrikar.com/forums/index.php?wiki/index/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Composant de formulaire&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</field>
+    <field name="ordering">1</field>
+    <field name="position">sidebar-right</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="published">1</field>
+    <field name="module">mod_custom</field>
+    <field name="access">1</field>
+    <field name="showtitle">1</field>
+    <field name="params">{&quot;prepare_content&quot;:0,&quot;backgroundimage&quot;:&quot;&quot;,&quot;layout&quot;:&quot;_:default&quot;,&quot;moduleclass_sfx&quot;:&quot;&quot;,&quot;cache&quot;:1,&quot;cache_time&quot;:900,&quot;cachemode&quot;:&quot;static&quot;,&quot;module_tag&quot;:&quot;div&quot;,&quot;bootstrap_size&quot;:&quot;0&quot;,&quot;header_tag&quot;:&quot;h3&quot;,&quot;header_class&quot;:&quot;&quot;,&quot;style&quot;:&quot;0&quot;}</field>
+    <field name="client_id">0</field>
+    <field name="language">*</field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

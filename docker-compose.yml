@@ -1,0 +1,53 @@
+version: '3.9'
+
+services:
+  joomla:
+    container_name: joomla
+    build:
+      context: ./.docker/
+      dockerfile: Dockerfile
+    image: emundus:1.0.0
+    ports:
+      - "8484:80"
+    restart: always
+    environment:
+      JOOMLA_DB_HOST: joomladb
+      JOOMLA_DB_USER: user
+      JOOMLA_DB_PASSWORD: password
+      JOOMLA_DB_NAME: joomla
+
+      SITENAME: Emundus test
+    volumes:
+      - ./.docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - .:/var/www/html
+    depends_on:
+      joomladb:
+        condition: service_healthy
+    links:
+      - joomladb:mysql
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  joomladb:
+    container_name: joomla_db
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: joomla
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      timeout: 10s
+      retries: 10
+      start_period: 15s
+    ports:
+      - "127.0.0.1:13309:3306"
+    restart: always
+    volumes:
+      # Delete this folder to reset the database
+      - ./.docker/data/mysql:/var/lib/mysql
+      # Uncomment this line to use a custom my.cnf file
+      - ./.docker/mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
+      # Uncomment this line to use a custom sql file to init database
+      - ./.docker/installation/sql:/docker-entrypoint-initdb.d

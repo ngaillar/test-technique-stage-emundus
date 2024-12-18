@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__fabrik_forms">
+   <field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="label" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="record_in_database" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="error" Type="varchar(150)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="intro" Type="text" Null="YES" Key="" Extra="" />
+   <field Field="created" Type="datetime" Null="NO" Key="" Extra="" />
+   <field Field="created_by" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="created_by_alias" Type="varchar(100)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="modified" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="modified_by" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="checked_out" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="checked_out_time" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_up" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_down" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="reset_button_label" Type="varchar(100)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="submit_button_label" Type="varchar(100)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="form_template" Type="varchar(255)" Null="YES" Key="" Default="" Extra="" />
+   <field Field="view_only_template" Type="varchar(255)" Null="YES" Key="" Default="" Extra="" />
+   <field Field="published" Type="int" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="private" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="params" Type="mediumtext" Null="YES" Key="" Extra="" />
+   <key Table="#__fabrik_forms" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__fabrik_forms" Non_unique="1" Key_name="published_INDEX" Seq_in_index="1" Column_name="published" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__fabrik_forms">
+   <row>
+    <field name="id">1</field>
+    <field name="label">Test technique</field>
+    <field name="record_in_database">1</field>
+    <field name="error">Some parts of your form have not been correctly filled in</field>
+    <field name="intro"></field>
+    <field name="created">2023-11-30 00:00:00</field>
+    <field name="created_by">1</field>
+    <field name="created_by_alias">sysadmin</field>
+    <field name="modified">2023-11-30 16:23:42</field>
+    <field name="modified_by">1</field>
+    <field name="checked_out">0</field>
+    <field name="checked_out_time">0000-00-00 00:00:00</field>
+    <field name="publish_up">2023-11-30 16:20:08</field>
+    <field name="publish_down" value_is_null="true"></field>
+    <field name="reset_button_label">Reset</field>
+    <field name="submit_button_label">Save</field>
+    <field name="form_template">bootstrap</field>
+    <field name="view_only_template">bootstrap</field>
+    <field name="published">1</field>
+    <field name="private">0</field>
+    <field name="params">{&quot;outro&quot;:&quot;&quot;,&quot;copy_button&quot;:&quot;0&quot;,&quot;copy_button_label&quot;:&quot;Save as copy&quot;,&quot;copy_button_class&quot;:&quot;&quot;,&quot;copy_icon&quot;:&quot;&quot;,&quot;copy_icon_location&quot;:&quot;before&quot;,&quot;reset_button&quot;:&quot;0&quot;,&quot;reset_button_label&quot;:&quot;Reset&quot;,&quot;reset_button_class&quot;:&quot;btn-warning&quot;,&quot;reset_icon&quot;:&quot;&quot;,&quot;reset_icon_location&quot;:&quot;before&quot;,&quot;apply_button&quot;:&quot;0&quot;,&quot;apply_button_label&quot;:&quot;Apply&quot;,&quot;apply_button_class&quot;:&quot;&quot;,&quot;apply_icon&quot;:&quot;&quot;,&quot;apply_icon_location&quot;:&quot;before&quot;,&quot;goback_button&quot;:&quot;1&quot;,&quot;goback_button_label&quot;:&quot;Back&quot;,&quot;goback_button_class&quot;:&quot;&quot;,&quot;goback_icon&quot;:&quot;&quot;,&quot;goback_icon_location&quot;:&quot;before&quot;,&quot;submit_button&quot;:&quot;1&quot;,&quot;submit_button_label&quot;:&quot;Save&quot;,&quot;save_button_class&quot;:&quot;btn-primary&quot;,&quot;save_icon&quot;:&quot;&quot;,&quot;save_icon_location&quot;:&quot;before&quot;,&quot;submit_on_enter&quot;:&quot;0&quot;,&quot;delete_button&quot;:&quot;0&quot;,&quot;delete_button_label&quot;:&quot;Delete&quot;,&quot;delete_button_class&quot;:&quot;btn-danger&quot;,&quot;delete_icon&quot;:&quot;&quot;,&quot;delete_icon_location&quot;:&quot;before&quot;,&quot;ajax_validations&quot;:&quot;0&quot;,&quot;ajax_validations_toggle_submit&quot;:&quot;0&quot;,&quot;submit-success-msg&quot;:&quot;&quot;,&quot;suppress_msgs&quot;:&quot;0&quot;,&quot;show_loader_on_submit&quot;:&quot;0&quot;,&quot;spoof_check&quot;:&quot;1&quot;,&quot;multipage_save&quot;:&quot;0&quot;,&quot;note&quot;:&quot;&quot;,&quot;labels_above&quot;:&quot;1&quot;,&quot;labels_above_details&quot;:&quot;1&quot;,&quot;pdf_template&quot;:&quot;&quot;,&quot;pdf_orientation&quot;:&quot;portrait&quot;,&quot;pdf_size&quot;:&quot;letter&quot;,&quot;pdf_include_bootstrap&quot;:&quot;1&quot;,&quot;admin_form_template&quot;:&quot;&quot;,&quot;admin_details_template&quot;:&quot;&quot;,&quot;show-title&quot;:&quot;1&quot;,&quot;print&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;pdf&quot;:&quot;&quot;,&quot;show-referring-table-releated-data&quot;:&quot;0&quot;,&quot;tiplocation&quot;:&quot;tip&quot;,&quot;process-jplugins&quot;:&quot;2&quot;,&quot;plugins&quot;:[],&quot;plugin_locations&quot;:[],&quot;plugin_events&quot;:[],&quot;plugin_description&quot;:[]}</field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

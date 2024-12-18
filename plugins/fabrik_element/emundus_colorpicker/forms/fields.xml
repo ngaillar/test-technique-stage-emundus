@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<form>
+	<!-- Zone "Options" du panel admin (CMS) -->
+	<fields addfieldpath="/administrator/components/com_fabrik/models/fields">
+		<fieldset label="COM_FABRIK_OPTIONS" name="plg-element-emundus_colorpicker">
+
+			<!-- Bouton d'aide -->
+			<field type="helplink"
+				url="PLG_ELEMENT_COLOURPICKER_HELP_SERVER"
+			/>
+
+			<!-- Masquer le plug-in au complet -->
+			<field name="hidden"
+				   type="radio"
+				   default="0"
+				   class="btn-group"
+				   layout="joomla.form.field.radio.switcher"
+				   description="PLG_ELEMENT_COLOURPICKER_HIDDEN_DESC"
+				   label="PLG_ELEMENT_COLOURPICKER_HIDDEN_LABEL">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<!-- Permettre la sélection de la couleur par défaut -->
+			<field name="default"
+				   type="color"
+				   default="#000000"
+				   label="PLG_ELEMENT_COLOURPICKER_DEFAULT_LABEL"
+			/>
+		</fieldset>
+	</fields>
+
+	<!-- Zone "Palette de couleurs" du panel admin (CMS) -->
+	<fields name="params">
+		<fieldset label="PLG_ELEMENT_COLOURPICKER_ADVANCED_LABEL" addfieldpath="/administrator/components/com_fabrik/models/fields" name="plg-element-emundus_colorpicker-advanced">
+
+			<!-- Bouton d'aide -->
+			<field type="helplink"
+				url="PLG_ELEMENT_COLOURPICKER_HELP_SERVER"
+			/>
+
+			<!-- Permettre l'affichage de la palette de couleur -->
+			<field name="hidden_color"
+				   type="radio"
+				   default="0"
+				   class="btn-group"
+				   layout="joomla.form.field.radio.switcher"
+				   label="PLG_ELEMENT_COLOURPICKER_HIDDEN_LABEL"
+				   description="PLG_ELEMENT_COLOURPICKER_HIDDEN_DESC" >
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<!-- Permettre l'édition des couleurs de la palette -->
+			<field name="color1"
+				   type="color"
+				   default="#db4141"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_1"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_1"
+			/>
+			<field name="color2"
+				   type="color"
+				   default="#b266e8"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_2"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_2"
+			/>
+			<field name="color3"
+				   type="color"
+				   default="#344aba"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_3"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_3"
+			/>
+			<field name="color4"
+				   type="color"
+				   default="#44c1cf"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_4"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_4"
+			/>
+			<field name="color5"
+				   type="color"
+				   default="#2fbd66"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_5"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_5"
+			/>
+			<field name="color6"
+				   type="color"
+				   default="#e0b534"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_6"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_6"
+			/>
+			<field name="color7"
+				   type="color"
+				   default="#f26e09"
+				   label="PLG_ELEMENT_COLOURPICKER_LABEL_7"
+				   description="PLG_ELEMENT_COLOURPICKER_DESC_7"
+			/>
+		</fieldset>
+	</fields>
+</form>

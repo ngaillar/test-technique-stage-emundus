@@ -1,0 +1,10 @@
+/configuration.php
+/.htaccess
+/images/custom/
+/cache/
+/administrator/cache/
+/administrator/logs/
+/.idea/
+/.docker/data/mysql/
+/media/cache/
+/tmp/

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__menu_types">
+   <field Field="id" Type="int unsigned" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="asset_id" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="menutype" Type="varchar(24)" Null="NO" Key="UNI" Extra="" />
+   <field Field="title" Type="varchar(48)" Null="NO" Key="" Extra="" />
+   <field Field="description" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="client_id" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="ordering" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <key Table="#__menu_types" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu_types" Non_unique="0" Key_name="idx_menutype" Seq_in_index="1" Column_name="menutype" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__menu_types">
+   <row>
+    <field name="id">1</field>
+    <field name="asset_id">0</field>
+    <field name="menutype">mainmenu</field>
+    <field name="title">Main Menu</field>
+    <field name="description">The main menu for the site</field>
+    <field name="client_id">0</field>
+    <field name="ordering">1</field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

@@ -1,0 +1,1805 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__action_logs">
+   <field Field="id" Type="int unsigned" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="message_language_key" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="message" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="log_date" Type="datetime" Null="NO" Key="" Extra="" />
+   <field Field="extension" Type="varchar(50)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="user_id" Type="int" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="item_id" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="ip_address" Type="varchar(40)" Null="NO" Key="" Default="0.0.0.0" Extra="" />
+   <key Table="#__action_logs" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_user_id" Seq_in_index="1" Column_name="user_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_user_id_logdate" Seq_in_index="1" Column_name="user_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_user_id_logdate" Seq_in_index="2" Column_name="log_date" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_user_id_extension" Seq_in_index="1" Column_name="user_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_user_id_extension" Seq_in_index="2" Column_name="extension" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_extension_item_id" Seq_in_index="1" Column_name="extension" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__action_logs" Non_unique="1" Key_name="idx_extension_item_id" Seq_in_index="2" Column_name="item_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__action_logs">
+   <row>
+    <field name="id">1</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_LOGGED_IN</field>
+    <field name="message">{&quot;action&quot;:&quot;login&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;app&quot;:&quot;PLG_ACTIONLOG_JOOMLA_APPLICATION_ADMINISTRATOR&quot;}</field>
+    <field name="log_date">2023-11-30 11:20:50</field>
+    <field name="extension">com_users</field>
+    <field name="user_id">1</field>
+    <field name="item_id">0</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">2</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:242,&quot;name&quot;:&quot;plg_fabrik_element_checkbox&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_checkbox&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">242</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">3</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:243,&quot;name&quot;:&quot;plg_fabrik_element_databasejoin&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_databasejoin&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">243</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">4</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:244,&quot;name&quot;:&quot;plg_fabrik_element_date&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_date&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">244</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">5</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:245,&quot;name&quot;:&quot;plg_fabrik_element_display&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_display&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">245</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">6</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:246,&quot;name&quot;:&quot;plg_fabrik_element_dropdown&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_dropdown&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">246</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">7</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:247,&quot;name&quot;:&quot;plg_fabrik_element_field&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_field&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">247</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">8</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:248,&quot;name&quot;:&quot;plg_fabrik_element_internalid&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_internalid&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">248</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">9</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:249,&quot;name&quot;:&quot;plg_fabrik_element_jdate&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_jdate&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">249</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">10</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:250,&quot;name&quot;:&quot;plg_fabrik_element_picklist&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_picklist&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">250</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">11</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:251,&quot;name&quot;:&quot;plg_fabrik_element_radiobutton&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_radiobutton&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">251</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">12</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:252,&quot;name&quot;:&quot;plg_fabrik_element_textarea&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_textarea&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">252</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">13</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:253,&quot;name&quot;:&quot;plg_fabrik_element_user&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_user&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">253</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">14</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:254,&quot;name&quot;:&quot;plg_fabrik_element_yesno&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_yesno&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">254</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">15</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:255,&quot;name&quot;:&quot;plg_fabrik_element_birthday&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_birthday&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">255</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">16</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:256,&quot;name&quot;:&quot;plg_fabrik_element_button&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_button&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">256</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">17</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:257,&quot;name&quot;:&quot;plg_fabrik_element_calc&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_calc&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">257</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">18</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:258,&quot;name&quot;:&quot;plg_fabrik_element_captcha&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_captcha&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">258</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">19</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:259,&quot;name&quot;:&quot;plg_fabrik_element_cascadingdropdown&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_cascadingdropdown&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">259</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">20</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:260,&quot;name&quot;:&quot;plg_fabrik_element_colourpicker&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_colourpicker&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">260</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">21</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:261,&quot;name&quot;:&quot;plg_fabrik_element_count&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_count&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">261</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">22</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:262,&quot;name&quot;:&quot;plg_fabrik_element_fileupload&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_fileupload&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">262</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">23</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:263,&quot;name&quot;:&quot;plg_fabrik_element_folder&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_folder&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">263</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">24</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:264,&quot;name&quot;:&quot;plg_fabrik_element_image&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_image&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">264</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">25</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:265,&quot;name&quot;:&quot;plg_fabrik_element_link&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_link&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">265</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">26</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:266,&quot;name&quot;:&quot;plg_fabrik_element_lockrow&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_lockrow&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">266</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">27</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:267,&quot;name&quot;:&quot;plg_fabrik_element_notes&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_notes&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">267</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">28</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:268,&quot;name&quot;:&quot;plg_fabrik_element_time&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_time&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">268</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">29</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:269,&quot;name&quot;:&quot;plg_fabrik_element_timer&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_timer&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">269</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">30</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:270,&quot;name&quot;:&quot;plg_fabrik_element_timestamp&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_timestamp&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">270</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">31</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:271,&quot;name&quot;:&quot;plg_fabrik_element_total&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_total&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">271</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">32</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:272,&quot;name&quot;:&quot;plg_fabrik_element_googlemap&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_googlemap&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">272</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">33</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:273,&quot;name&quot;:&quot;plg_fabrik_element_access&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_access&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">273</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">34</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:274,&quot;name&quot;:&quot;plg_fabrik_element_ip&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_ip&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">274</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">35</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:275,&quot;name&quot;:&quot;plg_fabrik_element_password&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_password&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">275</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">36</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:276,&quot;name&quot;:&quot;plg_fabrik_element_usergroup&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_usergroup&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">276</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">37</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:277,&quot;name&quot;:&quot;plg_fabrik_element_viewlevel&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_viewlevel&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">277</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">38</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:278,&quot;name&quot;:&quot;plg_fabrik_element_rating&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_rating&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">278</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">39</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:279,&quot;name&quot;:&quot;plg_fabrik_element_thumbs&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_thumbs&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">279</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">40</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:280,&quot;name&quot;:&quot;plg_fabrik_element_digsig&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_digsig&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">280</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">41</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:281,&quot;name&quot;:&quot;plg_fabrik_element_sequence&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_sequence&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">281</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">42</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:282,&quot;name&quot;:&quot;plg_fabrik_element_slider&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_slider&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">282</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">43</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:283,&quot;name&quot;:&quot;plg_fabrik_form_article&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_article&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">283</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">44</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:284,&quot;name&quot;:&quot;plg_fabrik_form_email&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_email&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">284</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">45</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:285,&quot;name&quot;:&quot;plg_fabrik_form_redirect&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_redirect&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">285</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">46</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:286,&quot;name&quot;:&quot;plg_fabrik_form_upsert&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_upsert&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">286</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">47</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:287,&quot;name&quot;:&quot;plg_fabrik_form_php&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_php&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">287</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">48</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:288,&quot;name&quot;:&quot;plg_fabrik_form_notification&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_notification&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">288</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">49</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:289,&quot;name&quot;:&quot;plg_fabrik_form_autofill&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_autofill&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">289</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">50</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:290,&quot;name&quot;:&quot;plg_fabrik_form_consent&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_consent&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">290</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">51</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:291,&quot;name&quot;:&quot;plg_fabrik_form_limit&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_limit&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">291</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">52</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:292,&quot;name&quot;:&quot;plg_fabrik_form_log&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_log&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">292</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">53</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:293,&quot;name&quot;:&quot;plg_fabrik_form_paginate&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_paginate&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">293</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">54</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:294,&quot;name&quot;:&quot;plg_fabrik_form_receipt&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_receipt&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">294</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">55</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:295,&quot;name&quot;:&quot;plg_fabrik_form_juser&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_juser&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">295</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">56</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:296,&quot;name&quot;:&quot;plg_fabrik_form_comment&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_form_comment&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">296</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">57</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:297,&quot;name&quot;:&quot;plg_fabrik_validationrule_isnot&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isnot&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">297</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">58</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:298,&quot;name&quot;:&quot;plg_fabrik_validationrule_isnumeric&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isnumeric&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">298</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">59</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:299,&quot;name&quot;:&quot;plg_fabrik_validationrule_isuniquevalue&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isuniquevalue&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">299</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">60</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:300,&quot;name&quot;:&quot;plg_fabrik_validationrule_notempty&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_notempty&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">300</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">61</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:301,&quot;name&quot;:&quot;plg_fabrik_validationrule_specialchars&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_specialchars&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">301</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">62</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:302,&quot;name&quot;:&quot;plg_fabrik_validationrule_php&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_php&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">302</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">63</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:303,&quot;name&quot;:&quot;plg_fabrik_validationrule_regex&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_regex&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">303</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">64</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:304,&quot;name&quot;:&quot;plg_fabrik_validationrule_emailexists&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_emailexists&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">304</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">65</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:305,&quot;name&quot;:&quot;plg_fabrik_validationrule_userexists&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_userexists&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">305</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">66</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:306,&quot;name&quot;:&quot;plg_fabrik_validationrule_areuniquevalues&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_areuniquevalues&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">306</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">67</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:307,&quot;name&quot;:&quot;plg_fabrik_validationrule_isalphanumeric&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isalphanumeric&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">307</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">68</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:308,&quot;name&quot;:&quot;plg_fabrik_validationrule_isemail&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isemail&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">308</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">69</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:309,&quot;name&quot;:&quot;plg_fabrik_validationrule_isgreaterorlessthan&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isgreaterorlessthan&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">309</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">70</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:310,&quot;name&quot;:&quot;plg_fabrik_validationrule_isiban&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_validationrule_isiban&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">310</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">71</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:311,&quot;name&quot;:&quot;plg_fabrik_list_candeleterow&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_candeleterow&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">311</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">72</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:312,&quot;name&quot;:&quot;plg_fabrik_list_caneditrow&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_caneditrow&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">312</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">73</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:313,&quot;name&quot;:&quot;plg_fabrik_list_canviewrow&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_canviewrow&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">313</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">74</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:314,&quot;name&quot;:&quot;plg_fabrik_list_copy&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_copy&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">314</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">75</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:315,&quot;name&quot;:&quot;plg_fabrik_list_email&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_email&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">315</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">76</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:316,&quot;name&quot;:&quot;plg_fabrik_list_js&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_js&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">316</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">77</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:317,&quot;name&quot;:&quot;plg_fabrik_list_php&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_php&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">317</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">78</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:318,&quot;name&quot;:&quot;plg_fabrik_list_php_events&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_php_events&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">318</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">79</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:319,&quot;name&quot;:&quot;plg_fabrik_list_download&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_download&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">319</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">80</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:320,&quot;name&quot;:&quot;plg_fabrik_list_listcsv&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_listcsv&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">320</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">81</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:321,&quot;name&quot;:&quot;plg_fabrik_list_lockrow&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_lockrow&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">321</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">82</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:322,&quot;name&quot;:&quot;plg_fabrik_list_update_col&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_update_col&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">322</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">83</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:323,&quot;name&quot;:&quot;plg_fabrik_list_link&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_link&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">323</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">84</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:324,&quot;name&quot;:&quot;plg_fabrik_list_order&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_list_order&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">324</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">85</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:325,&quot;name&quot;:&quot;plg_fabrik_cron_email&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_cron_email&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">325</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">86</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:326,&quot;name&quot;:&quot;plg_fabrik_cron_geocode&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_cron_geocode&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">326</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">87</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:327,&quot;name&quot;:&quot;plg_cron_importcsv&quot;,&quot;extension_name&quot;:&quot;plg_cron_importcsv&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">327</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">88</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:328,&quot;name&quot;:&quot;plg_fabrik_cron_notifications&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_cron_notifications&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">328</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">89</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:329,&quot;name&quot;:&quot;plg_fabrik_cron_php&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_cron_php&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">329</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">90</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:330,&quot;name&quot;:&quot;PLG_FABRIK_VISUALIZATION_FULLCALENDAR&quot;,&quot;extension_name&quot;:&quot;PLG_FABRIK_VISUALIZATION_FULLCALENDAR&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">330</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">91</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:331,&quot;name&quot;:&quot;plg_fabrik_visualization_googlemap&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_visualization_googlemap&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">331</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">92</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:332,&quot;name&quot;:&quot;plg_fabrik_visualization_slideshow&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_visualization_slideshow&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">332</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">93</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:333,&quot;name&quot;:&quot;plg_fabrik_system&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_system&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">333</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">94</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:334,&quot;name&quot;:&quot;plg_fabrik_search&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_search&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">334</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">95</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:335,&quot;name&quot;:&quot;System - Fabrik Scheduled Tasks&quot;,&quot;extension_name&quot;:&quot;System - Fabrik Scheduled Tasks&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">335</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">96</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:336,&quot;name&quot;:&quot;plg_fabrik&quot;,&quot;extension_name&quot;:&quot;plg_fabrik&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">336</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">97</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_LIBRARY&quot;,&quot;id&quot;:337,&quot;name&quot;:&quot;Fabrik library&quot;,&quot;extension_name&quot;:&quot;Fabrik library&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">337</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">98</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_LIBRARY&quot;,&quot;id&quot;:338,&quot;name&quot;:&quot;Fabrik Libs Library&quot;,&quot;extension_name&quot;:&quot;Fabrik Libs Library&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">338</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">99</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_LIBRARY&quot;,&quot;id&quot;:339,&quot;name&quot;:&quot;Fabrik Vendor Library&quot;,&quot;extension_name&quot;:&quot;Fabrik Vendor Library&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">339</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">100</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:340,&quot;name&quot;:&quot;mod_fabrik_list&quot;,&quot;extension_name&quot;:&quot;mod_fabrik_list&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">340</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">101</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:341,&quot;name&quot;:&quot;mod_fabrik_form&quot;,&quot;extension_name&quot;:&quot;mod_fabrik_form&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">341</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">102</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:342,&quot;name&quot;:&quot;mod_fabrik_form&quot;,&quot;extension_name&quot;:&quot;mod_fabrik_form&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">342</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">103</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:343,&quot;name&quot;:&quot;mod_fabrik_list&quot;,&quot;extension_name&quot;:&quot;mod_fabrik_list&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">343</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">104</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:344,&quot;name&quot;:&quot;mod_fabrik_quickicon&quot;,&quot;extension_name&quot;:&quot;mod_fabrik_quickicon&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">344</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">105</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:345,&quot;name&quot;:&quot;Fabrik Visualization&quot;,&quot;extension_name&quot;:&quot;Fabrik Visualization&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">345</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">106</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_COMPONENT&quot;,&quot;id&quot;:346,&quot;name&quot;:&quot;com_fabrik&quot;,&quot;extension_name&quot;:&quot;com_fabrik&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">346</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">107</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_EXTENSION_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PACKAGE&quot;,&quot;id&quot;:347,&quot;name&quot;:&quot;Fabrik Package&quot;,&quot;extension_name&quot;:&quot;Fabrik Package&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 11:33:05</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">347</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">108</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_LOGIN_FAILED</field>
+    <field name="message">{&quot;action&quot;:&quot;login&quot;,&quot;id&quot;:1,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;app&quot;:&quot;PLG_ACTIONLOG_JOOMLA_APPLICATION_ADMINISTRATOR&quot;}</field>
+    <field name="log_date">2023-11-30 16:16:27</field>
+    <field name="extension">com_users</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">109</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_LOGGED_IN</field>
+    <field name="message">{&quot;action&quot;:&quot;login&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;app&quot;:&quot;PLG_ACTIONLOG_JOOMLA_APPLICATION_ADMINISTRATOR&quot;}</field>
+    <field name="log_date">2023-11-30 16:16:31</field>
+    <field name="extension">com_users</field>
+    <field name="user_id">1</field>
+    <field name="item_id">0</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">110</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:19:06</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">111</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:19:07</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">112</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM&quot;,&quot;id&quot;:101,&quot;title&quot;:&quot;Home&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_menus&amp;task=item.edit&amp;id=101&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:19:29</field>
+    <field name="extension">com_menus.item</field>
+    <field name="user_id">1</field>
+    <field name="item_id">101</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">113</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__menu&quot;}</field>
+    <field name="log_date">2023-11-30 16:19:29</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">114</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_forms&quot;}</field>
+    <field name="log_date">2023-11-30 16:20:08</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">115</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED</field>
+    <field name="message">{&quot;action&quot;:&quot;add&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA&quot;,&quot;id&quot;:0,&quot;title&quot;:&quot;logo.png&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_media&amp;path=local-images:\/&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:21:09</field>
+    <field name="extension">com_media.file</field>
+    <field name="user_id">1</field>
+    <field name="item_id">0</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">116</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_STYLE&quot;,&quot;id&quot;:&quot;11&quot;,&quot;title&quot;:&quot;Cassiopeia - Default&quot;,&quot;extension_name&quot;:&quot;Cassiopeia - Default&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_templates&amp;task=style.edit&amp;id=11&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:21:21</field>
+    <field name="extension">com_templates.style</field>
+    <field name="user_id">1</field>
+    <field name="item_id">11</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">117</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_STYLE&quot;,&quot;id&quot;:&quot;11&quot;,&quot;title&quot;:&quot;Cassiopeia - Default&quot;,&quot;extension_name&quot;:&quot;Cassiopeia - Default&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_templates&amp;task=style.edit&amp;id=11&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:21:35</field>
+    <field name="extension">com_templates.style</field>
+    <field name="user_id">1</field>
+    <field name="item_id">11</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">118</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_STYLE&quot;,&quot;id&quot;:&quot;11&quot;,&quot;title&quot;:&quot;Cassiopeia - Default&quot;,&quot;extension_name&quot;:&quot;Cassiopeia - Default&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_templates&amp;task=style.edit&amp;id=11&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:21:45</field>
+    <field name="extension">com_templates.style</field>
+    <field name="user_id">1</field>
+    <field name="item_id">11</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">119</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_STYLE&quot;,&quot;id&quot;:&quot;11&quot;,&quot;title&quot;:&quot;Cassiopeia - Default&quot;,&quot;extension_name&quot;:&quot;Cassiopeia - Default&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_templates&amp;task=style.edit&amp;id=11&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:21:49</field>
+    <field name="extension">com_templates.style</field>
+    <field name="user_id">1</field>
+    <field name="item_id">11</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">120</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_STYLE&quot;,&quot;id&quot;:&quot;11&quot;,&quot;title&quot;:&quot;Cassiopeia - Default&quot;,&quot;extension_name&quot;:&quot;Cassiopeia - Default&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_templates&amp;task=style.edit&amp;id=11&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:21:57</field>
+    <field name="extension">com_templates.style</field>
+    <field name="user_id">1</field>
+    <field name="item_id">11</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">121</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-11-30 16:22:24</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">122</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UNPUBLISHED</field>
+    <field name="message">{&quot;action&quot;:&quot;unpublish&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:16,&quot;title&quot;:&quot;Login Form&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=16&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:22:24</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">16</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">123</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED</field>
+    <field name="message">{&quot;action&quot;:&quot;add&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:116,&quot;title&quot;:&quot;Instructions&quot;,&quot;extension_name&quot;:&quot;Instructions&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=116&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:23:09</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">116</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">124</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-11-30 16:23:26</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">125</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_forms&quot;}</field>
+    <field name="log_date">2023-11-30 16:23:42</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">126</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_forms&quot;}</field>
+    <field name="log_date">2023-11-30 16:24:25</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">127</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:31:05</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">128</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:31:14</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">129</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:31:47</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">130</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:44:36</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">131</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:349,&quot;name&quot;:&quot;plg_fabrik_element_emundus_colorpicker&quot;,&quot;extension_name&quot;:&quot;plg_fabrik_element_emundus_colorpicker&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:45:55</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">349</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">132</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:46:05</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">133</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__extensions&quot;}</field>
+    <field name="log_date">2023-11-30 16:46:28</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">134</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_PUBLISHED</field>
+    <field name="message">{&quot;action&quot;:&quot;publish&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:349,&quot;title&quot;:&quot;plg_fabrik_element_emundus_colorpicker&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_plugins&amp;task=plugin.edit&amp;extension_id=349&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:46:28</field>
+    <field name="extension">com_plugins.plugin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">349</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">135</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:46:40</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">136</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_COMPONENT_CONFIG_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_COMPONENT_CONFIG&quot;,&quot;id&quot;:346,&quot;title&quot;:&quot;com_fabrik&quot;,&quot;extension_name&quot;:&quot;com_fabrik&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_config&amp;task=component.edit&amp;extension_id=346&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:47:17</field>
+    <field name="extension">com_config.component</field>
+    <field name="user_id">1</field>
+    <field name="item_id">346</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">137</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:50:10</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">138</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:53:23</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">139</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-11-30 16:53:27</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">140</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:116,&quot;title&quot;:&quot;Instructions&quot;,&quot;extension_name&quot;:&quot;Instructions&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=116&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:58:28</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">116</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">141</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-11-30 16:58:28</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">142</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:116,&quot;title&quot;:&quot;Instructions&quot;,&quot;extension_name&quot;:&quot;Instructions&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=116&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-11-30 16:59:07</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">116</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">143</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-11-30 16:59:07</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">144</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_LOGIN_FAILED</field>
+    <field name="message">{&quot;action&quot;:&quot;login&quot;,&quot;id&quot;:1,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;app&quot;:&quot;PLG_ACTIONLOG_JOOMLA_APPLICATION_ADMINISTRATOR&quot;}</field>
+    <field name="log_date">2023-12-01 08:59:40</field>
+    <field name="extension">com_users</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">145</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_LOGGED_IN</field>
+    <field name="message">{&quot;action&quot;:&quot;login&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;app&quot;:&quot;PLG_ACTIONLOG_JOOMLA_APPLICATION_ADMINISTRATOR&quot;}</field>
+    <field name="log_date">2023-12-01 08:59:46</field>
+    <field name="extension">com_users</field>
+    <field name="user_id">1</field>
+    <field name="item_id">0</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">146</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:116,&quot;title&quot;:&quot;Instructions&quot;,&quot;extension_name&quot;:&quot;Instructions&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=116&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 09:00:15</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">116</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">147</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 09:00:15</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">148</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 09:01:04</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">149</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_PLUGIN_INSTALLED</field>
+    <field name="message">{&quot;action&quot;:&quot;install&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:350,&quot;name&quot;:&quot;Tchooz Console Plugin&quot;,&quot;extension_name&quot;:&quot;Tchooz Console Plugin&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 09:06:22</field>
+    <field name="extension">com_installer</field>
+    <field name="user_id">1</field>
+    <field name="item_id">350</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">150</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__extensions&quot;}</field>
+    <field name="log_date">2023-12-01 09:08:27</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">151</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_PUBLISHED</field>
+    <field name="message">{&quot;action&quot;:&quot;publish&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_PLUGIN&quot;,&quot;id&quot;:350,&quot;title&quot;:&quot;Tchooz Console Plugin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_plugins&amp;task=plugin.edit&amp;extension_id=350&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 09:08:27</field>
+    <field name="extension">com_plugins.plugin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">350</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">152</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_COMPONENT_CONFIG_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_COMPONENT_CONFIG&quot;,&quot;id&quot;:346,&quot;title&quot;:&quot;com_fabrik&quot;,&quot;extension_name&quot;:&quot;com_fabrik&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_config&amp;task=component.edit&amp;extension_id=346&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 09:28:22</field>
+    <field name="extension">com_config.component</field>
+    <field name="user_id">1</field>
+    <field name="item_id">346</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">153</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_lists&quot;}</field>
+    <field name="log_date">2023-12-01 11:03:34</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">154</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_LOGGED_IN</field>
+    <field name="message">{&quot;action&quot;:&quot;login&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;app&quot;:&quot;PLG_ACTIONLOG_JOOMLA_APPLICATION_ADMINISTRATOR&quot;}</field>
+    <field name="log_date">2023-12-01 13:44:40</field>
+    <field name="extension">com_users</field>
+    <field name="user_id">1</field>
+    <field name="item_id">0</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">155</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_lists&quot;}</field>
+    <field name="log_date">2023-12-01 13:44:43</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">156</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED</field>
+    <field name="message">{&quot;action&quot;:&quot;add&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:117,&quot;title&quot;:&quot;Documentation&quot;,&quot;extension_name&quot;:&quot;Documentation&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=117&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 13:48:01</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">117</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">157</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 13:51:46</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">158</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 13:51:49</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">159</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UNPUBLISHED</field>
+    <field name="message">{&quot;action&quot;:&quot;unpublish&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;Main Menu&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 13:51:49</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">160</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_lists&quot;}</field>
+    <field name="log_date">2023-12-01 13:52:10</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">161</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_lists&quot;}</field>
+    <field name="log_date">2023-12-01 13:52:22</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">162</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_lists&quot;}</field>
+    <field name="log_date">2023-12-01 13:52:51</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">163</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 13:53:26</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">164</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM&quot;,&quot;id&quot;:101,&quot;title&quot;:&quot;Home&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_menus&amp;task=item.edit&amp;id=101&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 13:53:42</field>
+    <field name="extension">com_menus.item</field>
+    <field name="user_id">1</field>
+    <field name="item_id">101</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">165</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__menu&quot;}</field>
+    <field name="log_date">2023-12-01 13:53:42</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">166</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED</field>
+    <field name="message">{&quot;action&quot;:&quot;add&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM&quot;,&quot;id&quot;:111,&quot;title&quot;:&quot;Mes donn\u00e9es&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_menus&amp;task=item.edit&amp;id=111&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 13:54:25</field>
+    <field name="extension">com_menus.item</field>
+    <field name="user_id">1</field>
+    <field name="item_id">111</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">167</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 13:54:37</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">168</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_PUBLISHED</field>
+    <field name="message">{&quot;action&quot;:&quot;publish&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;Main Menu&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 13:54:37</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">169</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MENU_ITEM&quot;,&quot;id&quot;:101,&quot;title&quot;:&quot;Mon formulaire&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_menus&amp;task=item.edit&amp;id=101&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 13:54:55</field>
+    <field name="extension">com_menus.item</field>
+    <field name="user_id">1</field>
+    <field name="item_id">101</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">170</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__menu&quot;}</field>
+    <field name="log_date">2023-12-01 13:54:55</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">171</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_ADDED</field>
+    <field name="message">{&quot;action&quot;:&quot;add&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MEDIA&quot;,&quot;id&quot;:0,&quot;title&quot;:&quot;Capture decran 2023-12-01 a 15.02.55.png&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_media&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 14:04:12</field>
+    <field name="extension">com_media.file</field>
+    <field name="user_id">1</field>
+    <field name="item_id">0</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">172</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:116,&quot;title&quot;:&quot;Instructions&quot;,&quot;extension_name&quot;:&quot;Instructions&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=116&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 14:09:36</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">116</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">173</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 14:09:36</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">174</field>
+    <field name="message_language_key">PLG_SYSTEM_ACTIONLOGS_CONTENT_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_MODULE&quot;,&quot;id&quot;:116,&quot;title&quot;:&quot;Instructions&quot;,&quot;extension_name&quot;:&quot;Instructions&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_modules&amp;task=module.edit&amp;id=116&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 14:32:31</field>
+    <field name="extension">com_modules.module</field>
+    <field name="user_id">1</field>
+    <field name="item_id">116</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">175</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 14:32:31</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">176</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__modules&quot;}</field>
+    <field name="log_date">2023-12-01 14:33:03</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">177</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_USER_CHECKIN</field>
+    <field name="message">{&quot;action&quot;:&quot;checkin&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_USER&quot;,&quot;id&quot;:1,&quot;title&quot;:&quot;sysadmin&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;,&quot;table&quot;:&quot;#__fabrik_elements&quot;}</field>
+    <field name="log_date">2023-12-01 14:33:19</field>
+    <field name="extension">com_checkin</field>
+    <field name="user_id">1</field>
+    <field name="item_id">1</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+   <row>
+    <field name="id">178</field>
+    <field name="message_language_key">PLG_ACTIONLOG_JOOMLA_COMPONENT_CONFIG_UPDATED</field>
+    <field name="message">{&quot;action&quot;:&quot;update&quot;,&quot;type&quot;:&quot;PLG_ACTIONLOG_JOOMLA_TYPE_COMPONENT_CONFIG&quot;,&quot;id&quot;:346,&quot;title&quot;:&quot;com_fabrik&quot;,&quot;extension_name&quot;:&quot;com_fabrik&quot;,&quot;itemlink&quot;:&quot;index.php?option=com_config&amp;task=component.edit&amp;extension_id=346&quot;,&quot;userid&quot;:1,&quot;username&quot;:&quot;sysadmin&quot;,&quot;accountlink&quot;:&quot;index.php?option=com_users&amp;task=user.edit&amp;id=1&quot;}</field>
+    <field name="log_date">2023-12-01 14:33:49</field>
+    <field name="extension">com_config.component</field>
+    <field name="user_id">1</field>
+    <field name="item_id">346</field>
+    <field name="ip_address">COM_ACTIONLOGS_DISABLED</field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

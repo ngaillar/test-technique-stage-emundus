@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__viewlevels">
+   <field Field="id" Type="int unsigned" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="title" Type="varchar(100)" Null="NO" Key="UNI" Default="" Extra="" />
+   <field Field="ordering" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="rules" Type="varchar(5120)" Null="NO" Key="" Extra="" />
+   <key Table="#__viewlevels" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__viewlevels" Non_unique="0" Key_name="idx_assetgroup_title_lookup" Seq_in_index="1" Column_name="title" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__viewlevels">
+   <row>
+    <field name="id">1</field>
+    <field name="title">Public</field>
+    <field name="ordering">0</field>
+    <field name="rules">[1]</field>
+   </row>
+   <row>
+    <field name="id">2</field>
+    <field name="title">Registered</field>
+    <field name="ordering">2</field>
+    <field name="rules">[6,2,8]</field>
+   </row>
+   <row>
+    <field name="id">3</field>
+    <field name="title">Special</field>
+    <field name="ordering">3</field>
+    <field name="rules">[6,3,8]</field>
+   </row>
+   <row>
+    <field name="id">5</field>
+    <field name="title">Guest</field>
+    <field name="ordering">1</field>
+    <field name="rules">[9]</field>
+   </row>
+   <row>
+    <field name="id">6</field>
+    <field name="title">Super Users</field>
+    <field name="ordering">4</field>
+    <field name="rules">[8]</field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

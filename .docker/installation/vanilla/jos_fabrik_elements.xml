@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__fabrik_elements">
+   <field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="name" Type="varchar(100)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="group_id" Type="int" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="plugin" Type="varchar(100)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="label" Type="text" Null="YES" Key="" Extra="" />
+   <field Field="checked_out" Type="int" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="checked_out_time" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="created" Type="datetime" Null="NO" Key="" Extra="" />
+   <field Field="created_by" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="created_by_alias" Type="varchar(100)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="modified" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="modified_by" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="width" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="height" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="default" Type="text" Null="YES" Key="" Extra="" />
+   <field Field="hidden" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="eval" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="ordering" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="show_in_list_summary" Type="int" Null="YES" Key="MUL" Default="0" Extra="" />
+   <field Field="filter_type" Type="varchar(20)" Null="YES" Key="" Default="" Extra="" />
+   <field Field="filter_exact_match" Type="int" Null="YES" Key="" Default="0" Extra="" />
+   <field Field="published" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="link_to_detail" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="primary_key" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="auto_increment" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="access" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="use_in_page_title" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="parent_id" Type="mediumint" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="params" Type="mediumtext" Null="YES" Key="" Extra="" />
+   <key Table="#__fabrik_elements" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__fabrik_elements" Non_unique="1" Key_name="show_in_list_summary_INDEX" Seq_in_index="1" Column_name="show_in_list_summary" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__fabrik_elements" Non_unique="1" Key_name="plugin_INDEX" Seq_in_index="1" Column_name="plugin" Collation="A" Null="" Index_type="BTREE" Sub_part="10" Comment="" />
+   <key Table="#__fabrik_elements" Non_unique="1" Key_name="checked_out_INDEX" Seq_in_index="1" Column_name="checked_out" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__fabrik_elements" Non_unique="1" Key_name="group_id_INDEX" Seq_in_index="1" Column_name="group_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__fabrik_elements" Non_unique="1" Key_name="parent_id_INDEX" Seq_in_index="1" Column_name="parent_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__fabrik_elements">
+   <row>
+    <field name="id">1</field>
+    <field name="name">id</field>
+    <field name="group_id">1</field>
+    <field name="plugin">internalid</field>
+    <field name="label">Identifiant</field>
+    <field name="checked_out">0</field>
+    <field name="checked_out_time">0000-00-00 00:00:00</field>
+    <field name="created">2023-11-30 16:18:34</field>
+    <field name="created_by">1</field>
+    <field name="created_by_alias">sysadmin</field>
+    <field name="modified">2023-12-01 14:33:19</field>
+    <field name="modified_by">1</field>
+    <field name="width">3</field>
+    <field name="height">0</field>
+    <field name="default"></field>
+    <field name="hidden">1</field>
+    <field name="eval">0</field>
+    <field name="ordering">2</field>
+    <field name="show_in_list_summary">1</field>
+    <field name="filter_type"></field>
+    <field name="filter_exact_match">0</field>
+    <field name="published">1</field>
+    <field name="link_to_detail">1</field>
+    <field name="primary_key">1</field>
+    <field name="auto_increment">1</field>
+    <field name="access">1</field>
+    <field name="use_in_page_title">0</field>
+    <field name="parent_id">0</field>
+    <field name="params">{&quot;show_in_rss_feed&quot;:&quot;0&quot;,&quot;show_label_in_rss_feed&quot;:&quot;0&quot;,&quot;use_as_rss_enclosure&quot;:&quot;0&quot;,&quot;rollover&quot;:&quot;&quot;,&quot;tipseval&quot;:&quot;0&quot;,&quot;tiplocation&quot;:&quot;top-left&quot;,&quot;labelindetails&quot;:&quot;0&quot;,&quot;labelinlist&quot;:&quot;0&quot;,&quot;comment&quot;:&quot;&quot;,&quot;edit_access&quot;:&quot;1&quot;,&quot;edit_access_user&quot;:&quot;&quot;,&quot;view_access&quot;:&quot;1&quot;,&quot;view_access_user&quot;:&quot;&quot;,&quot;list_view_access&quot;:&quot;1&quot;,&quot;encrypt&quot;:&quot;0&quot;,&quot;store_in_db&quot;:&quot;1&quot;,&quot;default_on_copy&quot;:&quot;0&quot;,&quot;can_order&quot;:&quot;0&quot;,&quot;alt_list_heading&quot;:&quot;&quot;,&quot;custom_link&quot;:&quot;&quot;,&quot;custom_link_target&quot;:&quot;&quot;,&quot;custom_link_indetails&quot;:&quot;1&quot;,&quot;use_as_row_class&quot;:&quot;0&quot;,&quot;include_in_list_query&quot;:&quot;1&quot;,&quot;always_render&quot;:&quot;0&quot;,&quot;icon_folder&quot;:&quot;0&quot;,&quot;icon_hovertext&quot;:&quot;1&quot;,&quot;icon_file&quot;:&quot;&quot;,&quot;icon_subdir&quot;:&quot;&quot;,&quot;filter_length&quot;:&quot;20&quot;,&quot;filter_access&quot;:&quot;1&quot;,&quot;full_words_only&quot;:&quot;0&quot;,&quot;filter_required&quot;:&quot;0&quot;,&quot;filter_build_method&quot;:&quot;0&quot;,&quot;filter_groupby&quot;:&quot;text&quot;,&quot;inc_in_adv_search&quot;:&quot;1&quot;,&quot;filter_class&quot;:&quot;col-sm-6&quot;,&quot;filter_responsive_class&quot;:&quot;&quot;,&quot;tablecss_header_class&quot;:&quot;&quot;,&quot;tablecss_header&quot;:&quot;&quot;,&quot;tablecss_cell_class&quot;:&quot;&quot;,&quot;tablecss_cell&quot;:&quot;&quot;,&quot;sum_on&quot;:&quot;0&quot;,&quot;sum_label&quot;:&quot;Sum&quot;,&quot;sum_access&quot;:&quot;1&quot;,&quot;sum_split&quot;:&quot;&quot;,&quot;avg_on&quot;:&quot;0&quot;,&quot;avg_label&quot;:&quot;Average&quot;,&quot;avg_access&quot;:&quot;1&quot;,&quot;avg_round&quot;:&quot;0&quot;,&quot;avg_split&quot;:&quot;&quot;,&quot;median_on&quot;:&quot;0&quot;,&quot;median_label&quot;:&quot;Median&quot;,&quot;median_access&quot;:&quot;1&quot;,&quot;median_split&quot;:&quot;&quot;,&quot;count_on&quot;:&quot;0&quot;,&quot;count_label&quot;:&quot;Count&quot;,&quot;count_condition&quot;:&quot;&quot;,&quot;count_access&quot;:&quot;1&quot;,&quot;count_split&quot;:&quot;&quot;,&quot;custom_calc_on&quot;:&quot;0&quot;,&quot;custom_calc_label&quot;:&quot;Custom&quot;,&quot;custom_calc_query&quot;:&quot;&quot;,&quot;custom_calc_access&quot;:&quot;1&quot;,&quot;custom_calc_split&quot;:&quot;&quot;,&quot;custom_calc_php&quot;:&quot;&quot;,&quot;validations&quot;:[]}</field>
+   </row>
+   <row>
+    <field name="id">2</field>
+    <field name="name">date_time</field>
+    <field name="group_id">1</field>
+    <field name="plugin">jdate</field>
+    <field name="label">date_time</field>
+    <field name="checked_out">0</field>
+    <field name="checked_out_time">0000-00-00 00:00:00</field>
+    <field name="created">2023-11-30 16:18:34</field>
+    <field name="created_by">1</field>
+    <field name="created_by_alias">sysadmin</field>
+    <field name="modified">2023-11-30 16:18:34</field>
+    <field name="modified_by">1</field>
+    <field name="width">0</field>
+    <field name="height">0</field>
+    <field name="default"></field>
+    <field name="hidden">1</field>
+    <field name="eval">0</field>
+    <field name="ordering">1</field>
+    <field name="show_in_list_summary">0</field>
+    <field name="filter_type"></field>
+    <field name="filter_exact_match">1</field>
+    <field name="published">1</field>
+    <field name="link_to_detail">1</field>
+    <field name="primary_key">0</field>
+    <field name="auto_increment">0</field>
+    <field name="access">1</field>
+    <field name="use_in_page_title">0</field>
+    <field name="parent_id">0</field>
+    <field name="params">{&quot;bootstrap_class&quot;:&quot;col-sm-6&quot;,&quot;jdate_showtime&quot;:&quot;1&quot;,&quot;jdate_time_format&quot;:&quot;H:i:s&quot;,&quot;jdate_time_24&quot;:&quot;1&quot;,&quot;jdate_store_as_local&quot;:&quot;0&quot;,&quot;jdate_table_format&quot;:&quot;Y-m-d H:i:s&quot;,&quot;jdate_form_format&quot;:&quot;Y-m-d&quot;,&quot;jdate_defaulttotoday&quot;:&quot;1&quot;,&quot;jdate_alwaystoday&quot;:&quot;0&quot;,&quot;jdate_allow_typing_in_field&quot;:&quot;1&quot;,&quot;jdate_show_week_numbers&quot;:&quot;0&quot;,&quot;jdate_csv_offset_tz&quot;:&quot;0&quot;,&quot;show_in_rss_feed&quot;:&quot;0&quot;,&quot;show_label_in_rss_feed&quot;:&quot;0&quot;,&quot;use_as_rss_enclosure&quot;:&quot;0&quot;,&quot;rollover&quot;:&quot;&quot;,&quot;tipseval&quot;:&quot;0&quot;,&quot;tiplocation&quot;:&quot;top-left&quot;,&quot;labelindetails&quot;:&quot;0&quot;,&quot;labelinlist&quot;:&quot;0&quot;,&quot;comment&quot;:&quot;&quot;,&quot;edit_access&quot;:&quot;1&quot;,&quot;edit_access_user&quot;:&quot;&quot;,&quot;view_access&quot;:&quot;1&quot;,&quot;view_access_user&quot;:&quot;&quot;,&quot;list_view_access&quot;:&quot;1&quot;,&quot;encrypt&quot;:&quot;0&quot;,&quot;store_in_db&quot;:&quot;1&quot;,&quot;default_on_copy&quot;:&quot;0&quot;,&quot;can_order&quot;:&quot;0&quot;,&quot;alt_list_heading&quot;:&quot;&quot;,&quot;custom_link&quot;:&quot;&quot;,&quot;custom_link_target&quot;:&quot;&quot;,&quot;custom_link_indetails&quot;:&quot;1&quot;,&quot;use_as_row_class&quot;:&quot;0&quot;,&quot;include_in_list_query&quot;:&quot;1&quot;,&quot;always_render&quot;:&quot;0&quot;,&quot;icon_folder&quot;:&quot;0&quot;,&quot;icon_hovertext&quot;:&quot;1&quot;,&quot;icon_file&quot;:&quot;&quot;,&quot;icon_subdir&quot;:&quot;&quot;,&quot;filter_length&quot;:&quot;20&quot;,&quot;filter_access&quot;:&quot;1&quot;,&quot;full_words_only&quot;:&quot;0&quot;,&quot;filter_required&quot;:&quot;0&quot;,&quot;filter_build_method&quot;:&quot;0&quot;,&quot;filter_groupby&quot;:&quot;text&quot;,&quot;inc_in_adv_search&quot;:&quot;1&quot;,&quot;filter_class&quot;:&quot;col-sm-6&quot;,&quot;filter_responsive_class&quot;:&quot;&quot;,&quot;tablecss_header_class&quot;:&quot;&quot;,&quot;tablecss_header&quot;:&quot;&quot;,&quot;tablecss_cell_class&quot;:&quot;&quot;,&quot;tablecss_cell&quot;:&quot;&quot;,&quot;sum_on&quot;:&quot;0&quot;,&quot;sum_label&quot;:&quot;Sum&quot;,&quot;sum_access&quot;:&quot;1&quot;,&quot;sum_split&quot;:&quot;&quot;,&quot;avg_on&quot;:&quot;0&quot;,&quot;avg_label&quot;:&quot;Average&quot;,&quot;avg_access&quot;:&quot;1&quot;,&quot;avg_round&quot;:&quot;0&quot;,&quot;avg_split&quot;:&quot;&quot;,&quot;median_on&quot;:&quot;0&quot;,&quot;median_label&quot;:&quot;Median&quot;,&quot;median_access&quot;:&quot;1&quot;,&quot;median_split&quot;:&quot;&quot;,&quot;count_on&quot;:&quot;0&quot;,&quot;count_label&quot;:&quot;Count&quot;,&quot;count_condition&quot;:&quot;&quot;,&quot;count_access&quot;:&quot;1&quot;,&quot;count_split&quot;:&quot;&quot;,&quot;custom_calc_on&quot;:&quot;0&quot;,&quot;custom_calc_label&quot;:&quot;Custom&quot;,&quot;custom_calc_query&quot;:&quot;&quot;,&quot;custom_calc_access&quot;:&quot;1&quot;,&quot;custom_calc_split&quot;:&quot;&quot;,&quot;custom_calc_php&quot;:&quot;&quot;,&quot;validations&quot;:[]}</field>
+   </row>
+   <row>
+    <field name="id">3</field>
+    <field name="name">nom</field>
+    <field name="group_id">1</field>
+    <field name="plugin">field</field>
+    <field name="label">Nom</field>
+    <field name="checked_out">0</field>
+    <field name="checked_out_time">0000-00-00 00:00:00</field>
+    <field name="created">2023-11-30 16:19:03</field>
+    <field name="created_by">1</field>
+    <field name="created_by_alias">sysadmin</field>
+    <field name="modified" value_is_null="true"></field>
+    <field name="modified_by">0</field>
+    <field name="width">0</field>
+    <field name="height">0</field>
+    <field name="default"></field>
+    <field name="hidden">0</field>
+    <field name="eval">0</field>
+    <field name="ordering">3</field>
+    <field name="show_in_list_summary">1</field>
+    <field name="filter_type"></field>
+    <field name="filter_exact_match">1</field>
+    <field name="published">1</field>
+    <field name="link_to_detail">0</field>
+    <field name="primary_key">0</field>
+    <field name="auto_increment">0</field>
+    <field name="access">1</field>
+    <field name="use_in_page_title">0</field>
+    <field name="parent_id">0</field>
+    <field name="params">{&quot;placeholder&quot;:&quot;&quot;,&quot;password&quot;:&quot;0&quot;,&quot;maxlength&quot;:&quot;255&quot;,&quot;disable&quot;:&quot;0&quot;,&quot;readonly&quot;:&quot;0&quot;,&quot;autocomplete&quot;:&quot;1&quot;,&quot;speech&quot;:&quot;0&quot;,&quot;advanced_behavior&quot;:&quot;0&quot;,&quot;bootstrap_class&quot;:&quot;col-sm-6&quot;,&quot;text_format&quot;:&quot;text&quot;,&quot;integer_length&quot;:&quot;11&quot;,&quot;decimal_length&quot;:&quot;2&quot;,&quot;field_use_number_format&quot;:&quot;0&quot;,&quot;field_thousand_sep&quot;:&quot;,&quot;,&quot;field_decimal_sep&quot;:&quot;.&quot;,&quot;text_format_string&quot;:&quot;&quot;,&quot;field_format_string_blank&quot;:&quot;1&quot;,&quot;text_input_mask&quot;:&quot;&quot;,&quot;text_input_mask_autoclear&quot;:&quot;0&quot;,&quot;text_input_mask_definitions&quot;:&quot;&quot;,&quot;render_as_qrcode&quot;:&quot;0&quot;,&quot;scan_qrcode&quot;:&quot;0&quot;,&quot;guess_linktype&quot;:&quot;0&quot;,&quot;link_target_options&quot;:&quot;default&quot;,&quot;rel&quot;:&quot;&quot;,&quot;link_title&quot;:&quot;&quot;,&quot;link_attributes&quot;:&quot;&quot;,&quot;show_in_rss_feed&quot;:&quot;0&quot;,&quot;show_label_in_rss_feed&quot;:&quot;0&quot;,&quot;use_as_rss_enclosure&quot;:&quot;0&quot;,&quot;rollover&quot;:&quot;&quot;,&quot;tipseval&quot;:&quot;0&quot;,&quot;tiplocation&quot;:&quot;top-left&quot;,&quot;labelindetails&quot;:&quot;0&quot;,&quot;labelinlist&quot;:&quot;0&quot;,&quot;comment&quot;:&quot;&quot;,&quot;edit_access&quot;:&quot;1&quot;,&quot;edit_access_user&quot;:&quot;&quot;,&quot;view_access&quot;:&quot;1&quot;,&quot;view_access_user&quot;:&quot;&quot;,&quot;list_view_access&quot;:&quot;1&quot;,&quot;encrypt&quot;:&quot;0&quot;,&quot;store_in_db&quot;:&quot;1&quot;,&quot;default_on_copy&quot;:&quot;0&quot;,&quot;can_order&quot;:&quot;0&quot;,&quot;alt_list_heading&quot;:&quot;&quot;,&quot;custom_link&quot;:&quot;&quot;,&quot;custom_link_target&quot;:&quot;&quot;,&quot;custom_link_indetails&quot;:&quot;1&quot;,&quot;use_as_row_class&quot;:&quot;0&quot;,&quot;include_in_list_query&quot;:&quot;1&quot;,&quot;always_render&quot;:&quot;0&quot;,&quot;icon_folder&quot;:&quot;0&quot;,&quot;icon_hovertext&quot;:&quot;1&quot;,&quot;icon_file&quot;:&quot;&quot;,&quot;icon_subdir&quot;:&quot;&quot;,&quot;filter_length&quot;:&quot;20&quot;,&quot;filter_access&quot;:&quot;1&quot;,&quot;full_words_only&quot;:&quot;0&quot;,&quot;filter_required&quot;:&quot;0&quot;,&quot;filter_build_method&quot;:&quot;0&quot;,&quot;filter_groupby&quot;:&quot;text&quot;,&quot;inc_in_adv_search&quot;:&quot;1&quot;,&quot;filter_class&quot;:&quot;col-sm-6&quot;,&quot;filter_responsive_class&quot;:&quot;&quot;,&quot;tablecss_header_class&quot;:&quot;&quot;,&quot;tablecss_header&quot;:&quot;&quot;,&quot;tablecss_cell_class&quot;:&quot;&quot;,&quot;tablecss_cell&quot;:&quot;&quot;,&quot;sum_on&quot;:&quot;0&quot;,&quot;sum_label&quot;:&quot;Sum&quot;,&quot;sum_access&quot;:&quot;1&quot;,&quot;sum_split&quot;:&quot;&quot;,&quot;avg_on&quot;:&quot;0&quot;,&quot;avg_label&quot;:&quot;Average&quot;,&quot;avg_access&quot;:&quot;1&quot;,&quot;avg_round&quot;:&quot;0&quot;,&quot;avg_split&quot;:&quot;&quot;,&quot;median_on&quot;:&quot;0&quot;,&quot;median_label&quot;:&quot;Median&quot;,&quot;median_access&quot;:&quot;1&quot;,&quot;median_split&quot;:&quot;&quot;,&quot;count_on&quot;:&quot;0&quot;,&quot;count_label&quot;:&quot;Count&quot;,&quot;count_condition&quot;:&quot;&quot;,&quot;count_access&quot;:&quot;1&quot;,&quot;count_split&quot;:&quot;&quot;,&quot;custom_calc_on&quot;:&quot;0&quot;,&quot;custom_calc_label&quot;:&quot;Custom&quot;,&quot;custom_calc_query&quot;:&quot;&quot;,&quot;custom_calc_access&quot;:&quot;1&quot;,&quot;custom_calc_split&quot;:&quot;&quot;,&quot;custom_calc_php&quot;:&quot;&quot;,&quot;notempty-message&quot;:[&quot;&quot;],&quot;notempty-validation_condition&quot;:[&quot;&quot;],&quot;tip_text&quot;:[&quot;&quot;],&quot;icon&quot;:[&quot;&quot;],&quot;validations&quot;:{&quot;plugin&quot;:[&quot;notempty&quot;],&quot;plugin_published&quot;:[&quot;1&quot;],&quot;validate_in&quot;:[&quot;both&quot;],&quot;validation_on&quot;:[&quot;both&quot;],&quot;validate_hidden&quot;:[&quot;0&quot;],&quot;must_validate&quot;:[&quot;0&quot;],&quot;show_icon&quot;:[&quot;1&quot;]}}</field>
+   </row>
+   <row>
+    <field name="id">4</field>
+    <field name="name">couleur</field>
+    <field name="group_id">1</field>
+    <field name="plugin">emundus_colorpicker</field>
+    <field name="label">Couleur</field>
+    <field name="checked_out">0</field>
+    <field name="checked_out_time">0000-00-00 00:00:00</field>
+    <field name="created">2023-11-30 16:30:52</field>
+    <field name="created_by">1</field>
+    <field name="created_by_alias">sysadmin</field>
+    <field name="modified">2023-11-30 16:50:10</field>
+    <field name="modified_by">1</field>
+    <field name="width">0</field>
+    <field name="height">0</field>
+    <field name="default"></field>
+    <field name="hidden">0</field>
+    <field name="eval">0</field>
+    <field name="ordering">4</field>
+    <field name="show_in_list_summary">1</field>
+    <field name="filter_type"></field>
+    <field name="filter_exact_match">1</field>
+    <field name="published">1</field>
+    <field name="link_to_detail">0</field>
+    <field name="primary_key">0</field>
+    <field name="auto_increment">0</field>
+    <field name="access">1</field>
+    <field name="use_in_page_title">0</field>
+    <field name="parent_id">0</field>
+    <field name="params">{&quot;show_in_rss_feed&quot;:&quot;0&quot;,&quot;show_label_in_rss_feed&quot;:&quot;0&quot;,&quot;use_as_rss_enclosure&quot;:&quot;0&quot;,&quot;rollover&quot;:&quot;&quot;,&quot;tipseval&quot;:&quot;0&quot;,&quot;tiplocation&quot;:&quot;top-left&quot;,&quot;labelindetails&quot;:&quot;0&quot;,&quot;labelinlist&quot;:&quot;0&quot;,&quot;comment&quot;:&quot;&quot;,&quot;edit_access&quot;:&quot;1&quot;,&quot;edit_access_user&quot;:&quot;&quot;,&quot;view_access&quot;:&quot;1&quot;,&quot;view_access_user&quot;:&quot;&quot;,&quot;list_view_access&quot;:&quot;1&quot;,&quot;encrypt&quot;:&quot;0&quot;,&quot;store_in_db&quot;:&quot;1&quot;,&quot;default_on_copy&quot;:&quot;0&quot;,&quot;can_order&quot;:&quot;0&quot;,&quot;alt_list_heading&quot;:&quot;&quot;,&quot;custom_link&quot;:&quot;&quot;,&quot;custom_link_target&quot;:&quot;&quot;,&quot;custom_link_indetails&quot;:&quot;1&quot;,&quot;use_as_row_class&quot;:&quot;0&quot;,&quot;include_in_list_query&quot;:&quot;1&quot;,&quot;always_render&quot;:&quot;0&quot;,&quot;icon_folder&quot;:&quot;0&quot;,&quot;icon_hovertext&quot;:&quot;1&quot;,&quot;icon_file&quot;:&quot;&quot;,&quot;icon_subdir&quot;:&quot;&quot;,&quot;filter_length&quot;:&quot;20&quot;,&quot;filter_access&quot;:&quot;1&quot;,&quot;full_words_only&quot;:&quot;0&quot;,&quot;filter_required&quot;:&quot;0&quot;,&quot;filter_build_method&quot;:&quot;0&quot;,&quot;filter_groupby&quot;:&quot;text&quot;,&quot;inc_in_adv_search&quot;:&quot;1&quot;,&quot;filter_class&quot;:&quot;col-sm-6&quot;,&quot;filter_responsive_class&quot;:&quot;&quot;,&quot;tablecss_header_class&quot;:&quot;&quot;,&quot;tablecss_header&quot;:&quot;&quot;,&quot;tablecss_cell_class&quot;:&quot;&quot;,&quot;tablecss_cell&quot;:&quot;&quot;,&quot;sum_on&quot;:&quot;0&quot;,&quot;sum_label&quot;:&quot;Sum&quot;,&quot;sum_access&quot;:&quot;1&quot;,&quot;sum_split&quot;:&quot;&quot;,&quot;avg_on&quot;:&quot;0&quot;,&quot;avg_label&quot;:&quot;Average&quot;,&quot;avg_access&quot;:&quot;1&quot;,&quot;avg_round&quot;:&quot;0&quot;,&quot;avg_split&quot;:&quot;&quot;,&quot;median_on&quot;:&quot;0&quot;,&quot;median_label&quot;:&quot;Median&quot;,&quot;median_access&quot;:&quot;1&quot;,&quot;median_split&quot;:&quot;&quot;,&quot;count_on&quot;:&quot;0&quot;,&quot;count_label&quot;:&quot;Count&quot;,&quot;count_condition&quot;:&quot;&quot;,&quot;count_access&quot;:&quot;1&quot;,&quot;count_split&quot;:&quot;&quot;,&quot;custom_calc_on&quot;:&quot;0&quot;,&quot;custom_calc_label&quot;:&quot;Custom&quot;,&quot;custom_calc_query&quot;:&quot;&quot;,&quot;custom_calc_access&quot;:&quot;1&quot;,&quot;custom_calc_split&quot;:&quot;&quot;,&quot;custom_calc_php&quot;:&quot;&quot;,&quot;validations&quot;:[]}</field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

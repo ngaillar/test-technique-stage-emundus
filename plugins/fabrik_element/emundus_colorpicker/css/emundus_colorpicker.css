@@ -1,0 +1,46 @@
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.color-picker .preset-colors {
+    display: flex;
+    gap: 8px;
+}
+
+.color-picker .preset-colors .color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-picker .preset-colors .color:hover {
+    transform: scale(1.1);
+    transition: 0.05s ease-in-out;
+}
+
+.manual-color {
+    display: flex;
+    gap: 10px;
+}
+
+.color-selector {
+    width: 45px;
+    height: 45px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.text-color {
+    height: 45px;
+    width: 180px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

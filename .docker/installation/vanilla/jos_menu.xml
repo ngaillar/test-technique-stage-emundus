@@ -1,0 +1,946 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__menu">
+   <field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="menutype" Type="varchar(24)" Null="NO" Key="MUL" Extra="" />
+   <field Field="title" Type="varchar(255)" Null="NO" Key="" Extra="" />
+   <field Field="alias" Type="varchar(400)" Null="NO" Key="MUL" Extra="" />
+   <field Field="note" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="path" Type="varchar(1024)" Null="NO" Key="MUL" Extra="" />
+   <field Field="link" Type="varchar(1024)" Null="NO" Key="" Extra="" />
+   <field Field="type" Type="varchar(16)" Null="NO" Key="" Extra="" />
+   <field Field="published" Type="tinyint" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="parent_id" Type="int unsigned" Null="NO" Key="" Default="1" Extra="" />
+   <field Field="level" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="component_id" Type="int unsigned" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="checked_out" Type="int unsigned" Null="YES" Key="" Extra="" />
+   <field Field="checked_out_time" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="browserNav" Type="tinyint" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="access" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="img" Type="varchar(255)" Null="NO" Key="" Extra="" />
+   <field Field="template_style_id" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="params" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="lft" Type="int" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="rgt" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="home" Type="tinyint unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="language" Type="char(7)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="client_id" Type="tinyint" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="publish_up" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_down" Type="datetime" Null="YES" Key="" Extra="" />
+   <key Table="#__menu" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="0" Key_name="idx_client_id_parent_id_alias_language" Seq_in_index="1" Column_name="client_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="0" Key_name="idx_client_id_parent_id_alias_language" Seq_in_index="2" Column_name="parent_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="0" Key_name="idx_client_id_parent_id_alias_language" Seq_in_index="3" Column_name="alias" Collation="A" Null="" Index_type="BTREE" Sub_part="100" Comment="" />
+   <key Table="#__menu" Non_unique="0" Key_name="idx_client_id_parent_id_alias_language" Seq_in_index="4" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_componentid" Seq_in_index="1" Column_name="component_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_componentid" Seq_in_index="2" Column_name="menutype" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_componentid" Seq_in_index="3" Column_name="published" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_componentid" Seq_in_index="4" Column_name="access" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_menutype" Seq_in_index="1" Column_name="menutype" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_left_right" Seq_in_index="1" Column_name="lft" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_left_right" Seq_in_index="2" Column_name="rgt" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_alias" Seq_in_index="1" Column_name="alias" Collation="A" Null="" Index_type="BTREE" Sub_part="100" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_path" Seq_in_index="1" Column_name="path" Collation="A" Null="" Index_type="BTREE" Sub_part="100" Comment="" />
+   <key Table="#__menu" Non_unique="1" Key_name="idx_language" Seq_in_index="1" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+  <table_data name="#__menu">
+   <row>
+    <field name="id">1</field>
+    <field name="menutype"></field>
+    <field name="title">Menu_Item_Root</field>
+    <field name="alias">root</field>
+    <field name="note"></field>
+    <field name="path"></field>
+    <field name="link"></field>
+    <field name="type"></field>
+    <field name="published">1</field>
+    <field name="parent_id">0</field>
+    <field name="level">0</field>
+    <field name="component_id">0</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img"></field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">0</field>
+    <field name="rgt">63</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">0</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">2</field>
+    <field name="menutype">main</field>
+    <field name="title">com_banners</field>
+    <field name="alias">Banners</field>
+    <field name="note"></field>
+    <field name="path">Banners</field>
+    <field name="link">index.php?option=com_banners</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">3</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:bookmark</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">1</field>
+    <field name="rgt">10</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">3</field>
+    <field name="menutype">main</field>
+    <field name="title">com_banners</field>
+    <field name="alias">Banners</field>
+    <field name="note"></field>
+    <field name="path">Banners/Banners</field>
+    <field name="link">index.php?option=com_banners&amp;view=banners</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">2</field>
+    <field name="level">2</field>
+    <field name="component_id">3</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:banners</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">2</field>
+    <field name="rgt">3</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">4</field>
+    <field name="menutype">main</field>
+    <field name="title">com_banners_categories</field>
+    <field name="alias">Categories</field>
+    <field name="note"></field>
+    <field name="path">Banners/Categories</field>
+    <field name="link">index.php?option=com_categories&amp;view=categories&amp;extension=com_banners</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">2</field>
+    <field name="level">2</field>
+    <field name="component_id">5</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:banners-cat</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">4</field>
+    <field name="rgt">5</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">5</field>
+    <field name="menutype">main</field>
+    <field name="title">com_banners_clients</field>
+    <field name="alias">Clients</field>
+    <field name="note"></field>
+    <field name="path">Banners/Clients</field>
+    <field name="link">index.php?option=com_banners&amp;view=clients</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">2</field>
+    <field name="level">2</field>
+    <field name="component_id">3</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:banners-clients</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">6</field>
+    <field name="rgt">7</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">6</field>
+    <field name="menutype">main</field>
+    <field name="title">com_banners_tracks</field>
+    <field name="alias">Tracks</field>
+    <field name="note"></field>
+    <field name="path">Banners/Tracks</field>
+    <field name="link">index.php?option=com_banners&amp;view=tracks</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">2</field>
+    <field name="level">2</field>
+    <field name="component_id">3</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:banners-tracks</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">8</field>
+    <field name="rgt">9</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">7</field>
+    <field name="menutype">main</field>
+    <field name="title">com_contact</field>
+    <field name="alias">Contacts</field>
+    <field name="note"></field>
+    <field name="path">Contacts</field>
+    <field name="link">index.php?option=com_contact</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">7</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:address-book</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">11</field>
+    <field name="rgt">20</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">8</field>
+    <field name="menutype">main</field>
+    <field name="title">com_contact_contacts</field>
+    <field name="alias">Contacts</field>
+    <field name="note"></field>
+    <field name="path">Contacts/Contacts</field>
+    <field name="link">index.php?option=com_contact&amp;view=contacts</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">7</field>
+    <field name="level">2</field>
+    <field name="component_id">7</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:contact</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">12</field>
+    <field name="rgt">13</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">9</field>
+    <field name="menutype">main</field>
+    <field name="title">com_contact_categories</field>
+    <field name="alias">Categories</field>
+    <field name="note"></field>
+    <field name="path">Contacts/Categories</field>
+    <field name="link">index.php?option=com_categories&amp;view=categories&amp;extension=com_contact</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">7</field>
+    <field name="level">2</field>
+    <field name="component_id">5</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:contact-cat</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">14</field>
+    <field name="rgt">15</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">10</field>
+    <field name="menutype">main</field>
+    <field name="title">com_newsfeeds</field>
+    <field name="alias">News Feeds</field>
+    <field name="note"></field>
+    <field name="path">News Feeds</field>
+    <field name="link">index.php?option=com_newsfeeds</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">16</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:rss</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">23</field>
+    <field name="rgt">28</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">11</field>
+    <field name="menutype">main</field>
+    <field name="title">com_newsfeeds_feeds</field>
+    <field name="alias">Feeds</field>
+    <field name="note"></field>
+    <field name="path">News Feeds/Feeds</field>
+    <field name="link">index.php?option=com_newsfeeds&amp;view=newsfeeds</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">10</field>
+    <field name="level">2</field>
+    <field name="component_id">16</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:newsfeeds</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">24</field>
+    <field name="rgt">25</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">12</field>
+    <field name="menutype">main</field>
+    <field name="title">com_newsfeeds_categories</field>
+    <field name="alias">Categories</field>
+    <field name="note"></field>
+    <field name="path">News Feeds/Categories</field>
+    <field name="link">index.php?option=com_categories&amp;view=categories&amp;extension=com_newsfeeds</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">10</field>
+    <field name="level">2</field>
+    <field name="component_id">5</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:newsfeeds-cat</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">26</field>
+    <field name="rgt">27</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">13</field>
+    <field name="menutype">main</field>
+    <field name="title">com_finder</field>
+    <field name="alias">Smart Search</field>
+    <field name="note"></field>
+    <field name="path">Smart Search</field>
+    <field name="link">index.php?option=com_finder</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">23</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:search-plus</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">29</field>
+    <field name="rgt">38</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">14</field>
+    <field name="menutype">main</field>
+    <field name="title">com_tags</field>
+    <field name="alias">Tags</field>
+    <field name="note"></field>
+    <field name="path">Tags</field>
+    <field name="link">index.php?option=com_tags&amp;view=tags</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">25</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">class:tags</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">39</field>
+    <field name="rgt">40</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">15</field>
+    <field name="menutype">main</field>
+    <field name="title">com_associations</field>
+    <field name="alias">Multilingual Associations</field>
+    <field name="note"></field>
+    <field name="path">Multilingual Associations</field>
+    <field name="link">index.php?option=com_associations&amp;view=associations</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">30</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:language</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">21</field>
+    <field name="rgt">22</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">16</field>
+    <field name="menutype">main</field>
+    <field name="title">mod_menu_fields</field>
+    <field name="alias">Contact Custom Fields</field>
+    <field name="note"></field>
+    <field name="path">contact/Custom Fields</field>
+    <field name="link">index.php?option=com_fields&amp;context=com_contact.contact</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">7</field>
+    <field name="level">2</field>
+    <field name="component_id">29</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:messages-add</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">16</field>
+    <field name="rgt">17</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">17</field>
+    <field name="menutype">main</field>
+    <field name="title">mod_menu_fields_group</field>
+    <field name="alias">Contact Custom Fields Group</field>
+    <field name="note"></field>
+    <field name="path">contact/Custom Fields Group</field>
+    <field name="link">index.php?option=com_fields&amp;view=groups&amp;context=com_contact.contact</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">7</field>
+    <field name="level">2</field>
+    <field name="component_id">29</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:messages-add</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">18</field>
+    <field name="rgt">19</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">18</field>
+    <field name="menutype">main</field>
+    <field name="title">com_finder_index</field>
+    <field name="alias">Smart-Search-Index</field>
+    <field name="note"></field>
+    <field name="path">Smart Search/Index</field>
+    <field name="link">index.php?option=com_finder&amp;view=index</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">13</field>
+    <field name="level">2</field>
+    <field name="component_id">23</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:finder</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">30</field>
+    <field name="rgt">31</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">19</field>
+    <field name="menutype">main</field>
+    <field name="title">com_finder_maps</field>
+    <field name="alias">Smart-Search-Maps</field>
+    <field name="note"></field>
+    <field name="path">Smart Search/Maps</field>
+    <field name="link">index.php?option=com_finder&amp;view=maps</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">13</field>
+    <field name="level">2</field>
+    <field name="component_id">23</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:finder-maps</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">32</field>
+    <field name="rgt">33</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">20</field>
+    <field name="menutype">main</field>
+    <field name="title">com_finder_filters</field>
+    <field name="alias">Smart-Search-Filters</field>
+    <field name="note"></field>
+    <field name="path">Smart Search/Filters</field>
+    <field name="link">index.php?option=com_finder&amp;view=filters</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">13</field>
+    <field name="level">2</field>
+    <field name="component_id">23</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:finder-filters</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">34</field>
+    <field name="rgt">35</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">21</field>
+    <field name="menutype">main</field>
+    <field name="title">com_finder_searches</field>
+    <field name="alias">Smart-Search-Searches</field>
+    <field name="note"></field>
+    <field name="path">Smart Search/Searches</field>
+    <field name="link">index.php?option=com_finder&amp;view=searches</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">13</field>
+    <field name="level">2</field>
+    <field name="component_id">23</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">0</field>
+    <field name="img">class:finder-searches</field>
+    <field name="template_style_id">0</field>
+    <field name="params"></field>
+    <field name="lft">36</field>
+    <field name="rgt">37</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">101</field>
+    <field name="menutype">mainmenu</field>
+    <field name="title">Mon formulaire</field>
+    <field name="alias">home</field>
+    <field name="note"></field>
+    <field name="path">home</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=form&amp;formid=1</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img"> </field>
+    <field name="template_style_id">0</field>
+    <field name="params">{&quot;rowid&quot;:&quot;&quot;,&quot;usekey&quot;:&quot;&quot;,&quot;random&quot;:&quot;0&quot;,&quot;fabriklayout&quot;:&quot;&quot;,&quot;extra_query_string&quot;:&quot;&quot;,&quot;menu-anchor_title&quot;:&quot;&quot;,&quot;menu-anchor_css&quot;:&quot;&quot;,&quot;menu_icon_css&quot;:&quot;&quot;,&quot;menu_image&quot;:&quot;&quot;,&quot;menu_image_css&quot;:&quot;&quot;,&quot;menu_text&quot;:1,&quot;menu_show&quot;:1,&quot;page_title&quot;:&quot;&quot;,&quot;show_page_heading&quot;:&quot;1&quot;,&quot;page_heading&quot;:&quot;&quot;,&quot;pageclass_sfx&quot;:&quot;&quot;,&quot;menu-meta_description&quot;:&quot;&quot;,&quot;robots&quot;:&quot;&quot;}</field>
+    <field name="lft">41</field>
+    <field name="rgt">42</field>
+    <field name="home">1</field>
+    <field name="language">*</field>
+    <field name="client_id">0</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">102</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik</field>
+    <field name="alias">com-fabrik</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=home</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/fabrik.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">43</field>
+    <field name="rgt">60</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">103</field>
+    <field name="menutype">main</field>
+    <field name="title">Home</field>
+    <field name="alias">home</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/home</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=home</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/fabrik.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">44</field>
+    <field name="rgt">45</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">104</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_lists</field>
+    <field name="alias">com-fabrik-lists</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-lists</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=lists</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/lists.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">46</field>
+    <field name="rgt">47</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">105</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_forms</field>
+    <field name="alias">com-fabrik-forms</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-forms</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=forms</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/forms.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">48</field>
+    <field name="rgt">49</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">106</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_groups</field>
+    <field name="alias">com-fabrik-groups</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-groups</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=groups</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/groups.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">50</field>
+    <field name="rgt">51</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">107</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_elements</field>
+    <field name="alias">com-fabrik-elements</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-elements</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=elements</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/elements.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">52</field>
+    <field name="rgt">53</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">108</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_visualizations</field>
+    <field name="alias">com-fabrik-visualizations</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-visualizations</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=visualizations</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/visualizations.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">54</field>
+    <field name="rgt">55</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">109</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_connections</field>
+    <field name="alias">com-fabrik-connections</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-connections</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=connections</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/connections.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">56</field>
+    <field name="rgt">57</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">110</field>
+    <field name="menutype">main</field>
+    <field name="title">com_fabrik_schedule</field>
+    <field name="alias">com-fabrik-schedule</field>
+    <field name="note"></field>
+    <field name="path">com-fabrik/com-fabrik-schedule</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=crons</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">102</field>
+    <field name="level">2</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img">../administrator/components/com_fabrik/images/schedules.png</field>
+    <field name="template_style_id">0</field>
+    <field name="params">{}</field>
+    <field name="lft">58</field>
+    <field name="rgt">59</field>
+    <field name="home">0</field>
+    <field name="language"></field>
+    <field name="client_id">1</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+   <row>
+    <field name="id">111</field>
+    <field name="menutype">mainmenu</field>
+    <field name="title">Mes données</field>
+    <field name="alias">mes-donnees</field>
+    <field name="note"></field>
+    <field name="path">mes-donnees</field>
+    <field name="link">index.php?option=com_fabrik&amp;view=list&amp;listid=1</field>
+    <field name="type">component</field>
+    <field name="published">1</field>
+    <field name="parent_id">1</field>
+    <field name="level">1</field>
+    <field name="component_id">346</field>
+    <field name="checked_out" value_is_null="true"></field>
+    <field name="checked_out_time" value_is_null="true"></field>
+    <field name="browserNav">0</field>
+    <field name="access">1</field>
+    <field name="img"> </field>
+    <field name="template_style_id">0</field>
+    <field name="params">{&quot;addurl&quot;:&quot;&quot;,&quot;show-title&quot;:&quot;1&quot;,&quot;calculations&quot;:&quot;0&quot;,&quot;listlayout&quot;:&quot;&quot;,&quot;fabriklayout&quot;:&quot;&quot;,&quot;resetfilters&quot;:&quot;0&quot;,&quot;list_elements&quot;:&quot;null&quot;,&quot;prefilters&quot;:&quot;null&quot;,&quot;rows_per_page&quot;:&quot;10&quot;,&quot;popup_width&quot;:&quot;340&quot;,&quot;popup_opts_width&quot;:&quot;200&quot;,&quot;csv_import_extensions&quot;:&quot;txt,csv,tsv&quot;,&quot;csv_import_sil_only&quot;:&quot;0&quot;,&quot;csv_import_dropdata&quot;:&quot;0&quot;,&quot;csv_import_overwrite&quot;:&quot;0&quot;,&quot;list_extra_query_string&quot;:&quot;&quot;,&quot;menu-anchor_title&quot;:&quot;&quot;,&quot;menu-anchor_css&quot;:&quot;&quot;,&quot;menu_icon_css&quot;:&quot;&quot;,&quot;menu_image&quot;:&quot;&quot;,&quot;menu_image_css&quot;:&quot;&quot;,&quot;menu_text&quot;:1,&quot;menu_show&quot;:1,&quot;page_title&quot;:&quot;&quot;,&quot;show_page_heading&quot;:&quot;&quot;,&quot;page_heading&quot;:&quot;&quot;,&quot;pageclass_sfx&quot;:&quot;&quot;,&quot;menu-meta_description&quot;:&quot;&quot;,&quot;robots&quot;:&quot;&quot;}</field>
+    <field name="lft">61</field>
+    <field name="rgt">62</field>
+    <field name="home">0</field>
+    <field name="language">*</field>
+    <field name="client_id">0</field>
+    <field name="publish_up" value_is_null="true"></field>
+    <field name="publish_down" value_is_null="true"></field>
+   </row>
+  </table_data>
+ </database>
+</mysqldump>

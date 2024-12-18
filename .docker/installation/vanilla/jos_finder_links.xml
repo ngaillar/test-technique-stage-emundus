@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__finder_links">
+   <field Field="link_id" Type="int unsigned" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="url" Type="varchar(255)" Null="NO" Key="MUL" Extra="" />
+   <field Field="route" Type="varchar(400)" Null="NO" Key="" Extra="" />
+   <field Field="title" Type="varchar(400)" Null="YES" Key="MUL" Extra="" />
+   <field Field="description" Type="text" Null="YES" Key="" Extra="" />
+   <field Field="indexdate" Type="datetime" Null="NO" Key="" Extra="" />
+   <field Field="md5sum" Type="varchar(32)" Null="YES" Key="MUL" Extra="" />
+   <field Field="published" Type="tinyint" Null="NO" Key="MUL" Default="1" Extra="" />
+   <field Field="state" Type="int" Null="NO" Key="" Default="1" Extra="" />
+   <field Field="access" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="language" Type="char(7)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="publish_start_date" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_end_date" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="start_date" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="end_date" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="list_price" Type="double unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="sale_price" Type="double unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="type_id" Type="int" Null="NO" Key="MUL" Extra="" />
+   <field Field="object" Type="mediumblob" Null="YES" Key="" Extra="" />
+   <key Table="#__finder_links" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="link_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_type" Seq_in_index="1" Column_name="type_id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_title" Seq_in_index="1" Column_name="title" Collation="A" Null="YES" Index_type="BTREE" Sub_part="100" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_md5" Seq_in_index="1" Column_name="md5sum" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_url" Seq_in_index="1" Column_name="url" Collation="A" Null="" Index_type="BTREE" Sub_part="75" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_language" Seq_in_index="1" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_list" Seq_in_index="1" Column_name="published" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_list" Seq_in_index="2" Column_name="state" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_list" Seq_in_index="3" Column_name="access" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_list" Seq_in_index="4" Column_name="publish_start_date" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_list" Seq_in_index="5" Column_name="publish_end_date" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_list" Seq_in_index="6" Column_name="list_price" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_sale" Seq_in_index="1" Column_name="published" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_sale" Seq_in_index="2" Column_name="state" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_sale" Seq_in_index="3" Column_name="access" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_sale" Seq_in_index="4" Column_name="publish_start_date" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_sale" Seq_in_index="5" Column_name="publish_end_date" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__finder_links" Non_unique="1" Key_name="idx_published_sale" Seq_in_index="6" Column_name="sale_price" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+  </table_structure>
+ </database>
+</mysqldump>

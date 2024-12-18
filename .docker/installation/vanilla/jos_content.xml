@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <database name="">
+  <table_structure name="#__content">
+   <field Field="id" Type="int unsigned" Null="NO" Key="PRI" Extra="auto_increment" />
+   <field Field="asset_id" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="title" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="alias" Type="varchar(400)" Null="NO" Key="MUL" Default="" Extra="" />
+   <field Field="introtext" Type="mediumtext" Null="NO" Key="" Extra="" />
+   <field Field="fulltext" Type="mediumtext" Null="NO" Key="" Extra="" />
+   <field Field="state" Type="tinyint" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="catid" Type="int unsigned" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="created" Type="datetime" Null="NO" Key="" Extra="" />
+   <field Field="created_by" Type="int unsigned" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="created_by_alias" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <field Field="modified" Type="datetime" Null="NO" Key="" Extra="" />
+   <field Field="modified_by" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="checked_out" Type="int unsigned" Null="YES" Key="MUL" Extra="" />
+   <field Field="checked_out_time" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_up" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="publish_down" Type="datetime" Null="YES" Key="" Extra="" />
+   <field Field="images" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="urls" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="attribs" Type="varchar(5120)" Null="NO" Key="" Extra="" />
+   <field Field="version" Type="int unsigned" Null="NO" Key="" Default="1" Extra="" />
+   <field Field="ordering" Type="int" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="metakey" Type="text" Null="YES" Key="" Extra="" />
+   <field Field="metadesc" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="access" Type="int unsigned" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="hits" Type="int unsigned" Null="NO" Key="" Default="0" Extra="" />
+   <field Field="metadata" Type="text" Null="NO" Key="" Extra="" />
+   <field Field="featured" Type="tinyint unsigned" Null="NO" Key="MUL" Default="0" Extra="" />
+   <field Field="language" Type="char(7)" Null="NO" Key="MUL" Extra="" />
+   <field Field="note" Type="varchar(255)" Null="NO" Key="" Default="" Extra="" />
+   <key Table="#__content" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_access" Seq_in_index="1" Column_name="access" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_checkout" Seq_in_index="1" Column_name="checked_out" Collation="A" Null="YES" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_state" Seq_in_index="1" Column_name="state" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_catid" Seq_in_index="1" Column_name="catid" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_createdby" Seq_in_index="1" Column_name="created_by" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_featured_catid" Seq_in_index="1" Column_name="featured" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_featured_catid" Seq_in_index="2" Column_name="catid" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_language" Seq_in_index="1" Column_name="language" Collation="A" Null="" Index_type="BTREE" Sub_part="" Comment="" />
+   <key Table="#__content" Non_unique="1" Key_name="idx_alias" Seq_in_index="1" Column_name="alias" Collation="A" Null="" Index_type="BTREE" Sub_part="191" Comment="" />
+  </table_structure>
+ </database>
+</mysqldump>
